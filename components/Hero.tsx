@@ -1,5 +1,6 @@
 import Image from "next/image";
 import imgHeroPhone from "../assets/home/desktop/image-hero-phone.png";
+import WhiteButton from "./WhiteButton";
 
 const Hero = () => {
   return (
@@ -13,16 +14,14 @@ const Hero = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <button className="bg-light-grey rounded-2xl text-dark-grey px-[2.4rem] py-[1.8rem] font-medium text-[1.5rem] leading-[2.198rem] tracking-[0.1rem]">
-          LEARN MORE
-        </button>
+        <WhiteButton text="learn more" />
       </div>
-      <div className="outline">
-        <Image
-          className="object-cover outline"
+      <div className="outline h-[37.1rem] px-[2.1rem] bg-[url('../assets/home/desktop/image-hero-phone.png')] bg-top bg-no-repeat ">
+        {/* <Image
+          className="object-cover outline border-2 border-red-800"
           src={imgHeroPhone}
           alt="hero-phone"
-        />
+        /> */}
       </div>
     </div>
   );

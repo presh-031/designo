@@ -1,6 +1,7 @@
 import Header from "./Header";
 
 import { Jost } from "@next/font/google";
+import Footer from "./Footer";
 const jost = Jost({ subsets: ["latin"] });
 
 type LayoutProps = {
@@ -13,6 +14,7 @@ const Layout = (props: LayoutProps) => {
     <div>
       <Header />
       {props.children}
+      <Footer />
     </div>
   );
 };
