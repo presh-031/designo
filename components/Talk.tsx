@@ -1,6 +1,8 @@
+import WhiteButton from "./WhiteButton";
+
 const Talk = () => {
   return (
-    <div className="text-center">
+    <div className="py-[6.4rem] mt-[12.2rem] rounded-2xl mx-[2.4rem] bg-peach text-white text-center">
       <p className="font-medium mb-[0.6rem] text-[3.2rem] leading-[3.6rem]">
         Let's talk about your project
       </p>
@@ -8,7 +10,7 @@ const Talk = () => {
         Ready to take it to the next level? Contact us today and find out how
         out expertise can help your business grow.
       </p>
-      <button>GET IN TOUCH</button>
+      <WhiteButton text="get in touch" />
     </div>
   );
 };

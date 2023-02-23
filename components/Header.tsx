@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import logo from "../assets/shared/desktop/logo-dark.png";
 import hamburgerMenu from "../assets/shared/mobile/icon-hamburger.svg";
+import Nav from "./Nav";
 
 const Header = () => {
   return (
@@ -12,13 +13,9 @@ const Header = () => {
       <div className="">
         <Image src={hamburgerMenu} alt="menu" width={24} height={20} />
       </div>
-      <nav className="hidden">
-        <ul>
-          <li>OUR COMPANY</li>
-          <li>LOCATIONS</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
+      <div className="hidden">
+        <Nav />
+      </div>
     </header>
   );
 };
