@@ -5,9 +5,9 @@ import illustrationResourceful from "../assets/home/desktop/illustration-resourc
 import illustrationFriendly from "../assets/home/desktop/illustration-friendly.svg";
 const Projects = () => {
   return (
-    <div className="px-[2.4rem]">
+    <div className="px-[2.4rem] mt-[12rem]">
       <div>
-        <div className="outline rounded-2xl font-medium  grid place-items-center py-[9.0rem]">
+        <div className="rounded-2xl mb-[2.4rem] bg-[url('../assets/home/mobile/image-web-design.jpg')] text-white font-medium  grid place-items-center py-[9.0rem]">
           <p className="text-[2.8rem] mb-[1.197rem] leading-[3.6rem] tracking-[0.14rem]">
             WEB DESIGN
           </p>
@@ -17,19 +17,29 @@ const Projects = () => {
           </p>
         </div>
         <div>
-          <div>
-            <p>APP DESIGN</p>
-            <p>VIEW PROJECTS</p>
+          <div className="rounded-2xl mb-[2.4rem] bg-[url('../assets/home/mobile/image-app-design.jpg')] text-white font-medium  grid place-items-center py-[9.0rem]">
+            <p className="text-[2.8rem] mb-[1.197rem] leading-[3.6rem] tracking-[0.14rem]">
+              APP DESIGN
+            </p>
+            <p className="text-[1.5rem] leading-[2.1rem] tracking-[0.5rem]">
+              VIEW PROJECTS
+              <span></span>
+            </p>
           </div>
-          <div>
-            <p>GRAPHIC DESIGN</p>
-            <p>VIEW PROJECTS</p>
+          <div className="rounded-2xl  bg-[url('../assets/home/mobile/image-graphic-design.jpg')] text-white font-medium  grid place-items-center py-[9.0rem]">
+            <p className="text-[2.8rem] mb-[1.197rem] leading-[3.6rem] tracking-[0.14rem]">
+              GRAPHIC DESIGN
+            </p>
+            <p className="text-[1.5rem] leading-[2.1rem] tracking-[0.5rem]">
+              VIEW PROJECTS
+              <span></span>
+            </p>
           </div>
         </div>
       </div>
 
       {/* About projects section */}
-      <div>
+      <div className="mt-[12rem] outline">
         <div>
           <Image src={illustrationPassionate} alt="passionate" />
           <p>PASSIONATE</p>

@@ -15,10 +15,10 @@ export default function Home() {
       </Head> */}
 
       {/* Homepage proper */}
-      <div>
+      <>
         <Hero />
         <Projects />
-      </div>
+      </>
     </>
   );
 }
