@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import Hero from "@/components/Hero";
 
-const inter = Inter({ subsets: ["latin"] });
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -16,8 +15,9 @@ export default function Home() {
       </Head> */}
 
       {/* Homepage proper */}
-      <div className="">
+      <div>
         <Hero />
+        <Projects />
       </div>
     </>
   );
