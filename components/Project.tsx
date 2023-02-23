@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 type ProjectProps = {
+  src: any;
+  alt: string;
   title: string;
   info: string;
 };
@@ -8,7 +10,7 @@ const Project = (props: ProjectProps) => {
   return (
     <div>
       <div>
-        <Image src={} alt="project" />
+        <Image src={props.src} alt={props.alt} />
       </div>
       <div>
         <p>{props.title}</p>
