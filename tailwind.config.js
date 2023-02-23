@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         // Primary colors
         peach: "#e7816b",
-        black: "#1dc1e",
+        black: "#1d1c1e",
         // white
 
         // Secondary colors
