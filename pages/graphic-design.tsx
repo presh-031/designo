@@ -4,6 +4,7 @@ import Project from "@/components/Project";
 import change from "../assets/graphic-design/desktop/image-change.jpg";
 import boxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import science from "../assets/graphic-design/desktop/image-science.jpg";
+import ProjectType from "@/components/ProjectType";
 
 const graphicDesign = () => {
   return (
@@ -32,6 +33,11 @@ const graphicDesign = () => {
           title="science!"
           info="A poster made in collaboration with the Federal Art Project"
         />
+      </div>
+
+      <div className="my-[9.6rem] px-[2.4rem]">
+        <ProjectType href="/app-design" projectType="APP DESIGN" />
+        <ProjectType href="/web-design" projectType="WEB DESIGN" />
       </div>
     </div>
   );

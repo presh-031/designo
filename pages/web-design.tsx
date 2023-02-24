@@ -7,6 +7,7 @@ import photon from "../assets/web-design/desktop/image-photon.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
+import ProjectType from "@/components/ProjectType";
 const webDesign = () => {
   return (
     <div>
@@ -51,6 +52,11 @@ const webDesign = () => {
           title="camp"
           info="A multi-carrier shipping website for ecommerce businesses"
         />
+      </div>
+
+      <div className="my-[9.6rem] px-[2.4rem]">
+        <ProjectType href="/app-design" projectType="APP DESIGN" />
+        <ProjectType href="/graphic-design" projectType="GRAPHIC DESIGN" />
       </div>
     </div>
   );

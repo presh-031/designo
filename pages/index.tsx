@@ -21,7 +21,7 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <div className="mt-[12rem] px-[2.4rem]">
+        <div className="my-[12rem] px-[2.4rem]">
           <ProjectType href="/web-design" projectType="WEB DESIGN" />
           <div>
             <ProjectType href="/app-design" projectType="APP DESIGN" />

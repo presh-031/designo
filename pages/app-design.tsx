@@ -6,6 +6,7 @@ import eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import faceit from "../assets/app-design/desktop/image-faceit.jpg";
 import todo from "../assets/app-design/desktop/image-todo.jpg";
 import loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
+import ProjectType from "@/components/ProjectType";
 
 const appDesign = () => {
   return (
@@ -45,6 +46,11 @@ const appDesign = () => {
           title="tim brown"
           info="A VR experience app made for Loopstudios"
         />
+      </div>
+
+      <div className="my-[9.6rem] px-[2.4rem]">
+        <ProjectType href="/web-design" projectType="WEB DESIGN" />
+        <ProjectType href="/graphic-design" projectType="GRAPHIC DESIGN" />
       </div>
     </div>
   );

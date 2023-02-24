@@ -6,7 +6,7 @@ import illustrationFriendly from "../assets/home/desktop/illustration-friendly.s
 
 const AboutProjects = () => {
   return (
-    <div className="mt-[12rem] outline">
+    <div className=" outline">
       <div>
         <Image src={illustrationPassionate} alt="passionate" />
         <p>PASSIONATE</p>
