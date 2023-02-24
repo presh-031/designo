@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
 import Talk from "@/components/Talk";
 import AboutProjects from "@/components/AboutProjects";
+import ProjectType from "@/components/ProjectType";
 
 export default function Home() {
   return (
@@ -21,7 +21,14 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <Projects />
+        <div className="mt-[12rem] px-[2.4rem]">
+          <ProjectType href="/web-design" projectType="WEB DESIGN" />
+          <div>
+            <ProjectType href="/app-design" projectType="APP DESIGN" />
+            <ProjectType href="/graphic-design" projectType="GRAPHIC DESIGN" />
+          </div>
+        </div>
+
         <AboutProjects />
         <Talk />
       </>
