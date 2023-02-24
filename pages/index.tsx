@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Talk from "@/components/Talk";
+import AboutProjects from "@/components/AboutProjects";
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
       {/* Homepage proper */}
       <>
         <Hero />
+
+        {/* Projects */}
         <Projects />
+        <AboutProjects />
         <Talk />
       </>
     </>

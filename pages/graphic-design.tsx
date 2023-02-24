@@ -9,8 +9,8 @@ const graphicDesign = () => {
   return (
     <div>
       <OtherPagesHero
-        title="Web Design"
-        aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
+        title="Graphic Design"
+        aboutTitle="We deliver eye-catching branding materials that are tailored to meet your business objectives."
       />
       <div className="grid grid-cols-1 gap-[4rem] px-[2.4rem] pt-[9.6rem]">
         <Project

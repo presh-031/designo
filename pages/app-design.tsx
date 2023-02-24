@@ -11,8 +11,8 @@ const appDesign = () => {
   return (
     <div>
       <OtherPagesHero
-        title="Web Design"
-        aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
+        title="App Design"
+        aboutTitle="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
       <div className="grid grid-cols-1 gap-[4rem] px-[2.4rem] pt-[9.6rem]">
         <Project
