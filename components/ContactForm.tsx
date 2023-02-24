@@ -3,7 +3,7 @@ import WhiteButton from "./WhiteButton";
 const ContactForm = () => {
   return (
     <div className="bg-peach px-[2.4rem] py-[7.2rem]  text-white">
-      <div className="text-center">
+      <div className="mb-[3.7rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem]">
           Contact Us
         </p>
@@ -16,21 +16,21 @@ const ContactForm = () => {
       </div>
       <form className="text-[1.5rem] font-normal leading-[2.6rem]">
         <input
-          className="mb-[1.4rem] w-full bg-transparent py-[1.1rem] outline outline-black"
+          className="mb-[1.4rem] w-full border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
           type="text"
           id="name"
           placeholder="Name"
           name="name"
         />
         <input
-          className="mb-[1.4rem] w-full bg-transparent py-[1.1rem] outline outline-black"
+          className="mb-[1.4rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
           type="text"
           id="email"
           placeholder="Email Address"
           name="email"
         />
         <input
-          className="mb-[1.4rem] w-full bg-transparent py-[1.1rem] outline outline-black"
+          className="mb-[1.4rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
           type="text"
           id="phone"
           placeholder="Phone"
@@ -38,16 +38,16 @@ const ContactForm = () => {
         />
 
         <textarea
-          className="mb-[1.4rem] w-full bg-transparent py-[1.1rem] outline outline-black"
+          className="mb-[5.8rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
           name="message"
           id="message"
-          cols={30}
           placeholder="Your Message"
-          rows={10}
+          rows={4}
         ></textarea>
 
-        {/* Not enough padding in this component for this form?? */}
-        <WhiteButton text="submit" />
+        <button className="mx-auto block rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey">
+          submit
+        </button>
       </form>
     </div>
   );
