@@ -1,15 +1,18 @@
 import Image from "next/image";
 
-const SeeLocation = () => {
+type seeLocationProps = {
+  src: any;
+  location: string;
+};
+
+const SeeLocation = (props: seeLocationProps) => {
   return (
     <div>
       <div>
-        <div>
-          <Image />
-        </div>
-        <p></p>
-        <button></button>
+        <Image src={props.src} alt={props.location} />
       </div>
+      <p>{props.location}</p>
+      <button>see location</button>
     </div>
   );
 };
