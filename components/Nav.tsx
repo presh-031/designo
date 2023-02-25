@@ -1,10 +1,18 @@
+import Link from "next/link";
+
 const Nav = () => {
   return (
-    <nav className="font-normal mt-[3.2rem] text-white text-[1.4rem] leading-[1.4rem] tracking-[0.2rem]">
+    <nav className="mt-[3.2rem] text-[1.4rem] font-normal leading-[1.4rem] tracking-[0.2rem] text-white">
       <ul className="flex flex-col gap-[3.2rem]">
-        <li>OUR COMPANY</li>
-        <li>LOCATIONS</li>
-        <li>CONTACT</li>
+        <li>
+          <Link href="/about">OUR COMPANY</Link>
+        </li>
+        <li>
+          <Link href="/locations">LOCATIONS</Link>
+        </li>
+        <li>
+          <Link href="/contact">CONTACT</Link>
+        </li>
       </ul>
     </nav>
   );

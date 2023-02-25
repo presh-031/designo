@@ -15,11 +15,12 @@ type LocationProps = {
   address: string;
   phone: string;
   mail: string;
+  id: string;
 };
 
 const Location = (props: LocationProps) => {
   return (
-    <div className="">
+    <div id={props.id} className="">
       <div className="h-[32rem] ">
         {/* <MapContainer
           center={[51.505, -0.09]}

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 type ProjectTypeProps = {
   href: string;
+  // bgUrl: string;
   projectType: string;
 };
 const ProjectType = (props: ProjectTypeProps) => {

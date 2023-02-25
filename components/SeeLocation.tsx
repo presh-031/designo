@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type seeLocationProps = {
   src: any;
   location: string;
+  href: string;
 };
 
 const SeeLocation = (props: seeLocationProps) => {
@@ -14,9 +16,13 @@ const SeeLocation = (props: seeLocationProps) => {
       <p className="mb-[3.2rem] text-[2rem]  uppercase leading-[2.6rem] tracking-[0.5rem]  text-dark-grey">
         {props.location}
       </p>
-      <button className="rounded-2xl bg-peach p-[1.8rem] text-[1.5rem] uppercase leading-[2.1rem]  tracking-[0.1rem] text-white">
+      <Link
+        href={`/locations/#${props.href}`}
+        scroll={false}
+        className="rounded-2xl bg-peach p-[1.8rem] text-[1.5rem] uppercase leading-[2.1rem]  tracking-[0.1rem] text-white"
+      >
         see location
-      </button>
+      </Link>
     </div>
   );
 };
