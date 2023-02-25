@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+
+  // Refs for input fields focusing
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const messageRef = useRef(null);
 
   const [showErrorMsg, setShowErrorMsg] = useState(false);
   const handleNameChange = (e) => {
@@ -22,8 +28,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log(name, email, phone, message);
 
     if (!name || !email || !phone || !message) {
       setShowErrorMsg(true);
@@ -54,9 +58,17 @@ const ContactForm = () => {
             placeholder="Name"
             onChange={handleNameChange}
             value={name}
+            ref={nameRef}
           />
           {showErrorMsg && !name && (
-            <p className="pt-[1.1rem]">Can't be empty</p>
+            <p
+              onClick={() => {
+                nameRef.current.focus();
+              }}
+              className="pt-[1.1rem]"
+            >
+              Can't be empty
+            </p>
           )}
           {/* <ErrorMsg />{" "} */}
         </div>
@@ -69,9 +81,17 @@ const ContactForm = () => {
             placeholder="Email Address"
             onChange={handleEmailChange}
             value={email}
+            ref={emailRef}
           />
           {showErrorMsg && !email && (
-            <p className="pt-[1.1rem]">Can't be empty</p>
+            <p
+              onClick={() => {
+                emailRef.current.focus();
+              }}
+              className="pt-[1.1rem]"
+            >
+              Can't be empty
+            </p>
           )}
         </div>
 
@@ -83,9 +103,17 @@ const ContactForm = () => {
             placeholder="Phone"
             onChange={handlePhoneChange}
             value={phone}
+            ref={phoneRef}
           />
           {showErrorMsg && !phone && (
-            <p className="pt-[1.1rem]">Can't be empty</p>
+            <p
+              onClick={() => {
+                phoneRef.current.focus();
+              }}
+              className="pt-[1.1rem]"
+            >
+              Can't be empty
+            </p>
           )}
         </div>
 
@@ -97,9 +125,17 @@ const ContactForm = () => {
             rows={4}
             onChange={handleMessageChange}
             value={message}
+            ref={messageRef}
           ></textarea>
           {showErrorMsg && !message && (
-            <p className="pt-[1.1rem]">Can't be empty</p>
+            <p
+              onClick={() => {
+                messageRef.current.focus();
+              }}
+              className="pt-[1.1rem]"
+            >
+              Can't be empty
+            </p>
           )}
         </div>
 
