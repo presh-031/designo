@@ -8,7 +8,7 @@ const ProjectType = (props: ProjectTypeProps) => {
   return (
     <Link
       href={props.href}
-      className="mb-[2.4rem] grid place-items-center rounded-2xl bg-[url('../assets/home/mobile/image-web-design.jpg')]  py-[9.0rem] font-medium text-white"
+      className=" grid place-items-center rounded-2xl bg-[url('../assets/home/mobile/image-web-design.jpg')]  py-[9.0rem] font-medium text-white"
     >
       <p className="mb-[1.197rem] text-[2.8rem] leading-[3.6rem] tracking-[0.14rem]">
         {props.projectType}

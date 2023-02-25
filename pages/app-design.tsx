@@ -7,6 +7,7 @@ import faceit from "../assets/app-design/desktop/image-faceit.jpg";
 import todo from "../assets/app-design/desktop/image-todo.jpg";
 import loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
 import ProjectType from "@/components/ProjectType";
+import Talk from "@/components/Talk";
 
 const appDesign = () => {
   return (
@@ -48,10 +49,12 @@ const appDesign = () => {
         />
       </div>
 
-      <div className="my-[9.6rem] px-[2.4rem]">
+      <div className="mt-[9.6rem] mb-[-9.4rem] flex flex-col gap-[2.4rem] border border-red-800 px-[2.4rem]">
         <ProjectType href="/web-design" projectType="WEB DESIGN" />
         <ProjectType href="/graphic-design" projectType="GRAPHIC DESIGN" />
       </div>
+
+      <Talk />
     </div>
   );
 };

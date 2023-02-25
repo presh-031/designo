@@ -5,6 +5,7 @@ import change from "../assets/graphic-design/desktop/image-change.jpg";
 import boxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import science from "../assets/graphic-design/desktop/image-science.jpg";
 import ProjectType from "@/components/ProjectType";
+import Talk from "@/components/Talk";
 
 const graphicDesign = () => {
   return (
@@ -35,10 +36,12 @@ const graphicDesign = () => {
         />
       </div>
 
-      <div className="my-[9.6rem] px-[2.4rem]">
+      <div className="mt-[9.6rem] mb-[-9.4rem] flex flex-col gap-[2.4rem] border border-red-800 px-[2.4rem]">
         <ProjectType href="/app-design" projectType="APP DESIGN" />
         <ProjectType href="/web-design" projectType="WEB DESIGN" />
       </div>
+
+      <Talk />
     </div>
   );
 };

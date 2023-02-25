@@ -23,7 +23,7 @@ const AboutProjects = () => {
 
       <div className="px-[2.4rem] text-dark-grey ">
         <div className="mx-auto inline-block rounded-full border border-red-800">
-          <Image className="" src={illustrationFriendly} alt="friendly" />
+          <Image className="" src={illustrationResourceful} alt="resourceful" />
         </div>
         <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
           RESOURCEFUL
@@ -40,7 +40,7 @@ const AboutProjects = () => {
           <Image className="" src={illustrationFriendly} alt="friendly" />
         </div>
         <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
-          <p>FRIENDLY</p>
+          FRIENDLY
         </p>
         <p className="text-[1.6rem] font-normal leading-[2.6rem] ">
           We are a group of enthusiastic folks who know how to put people first.
