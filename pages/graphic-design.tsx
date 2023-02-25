@@ -1,11 +1,11 @@
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
-
-import change from "../assets/graphic-design/desktop/image-change.jpg";
-import boxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
-import science from "../assets/graphic-design/desktop/image-science.jpg";
 import ProjectType from "@/components/ProjectType";
 import Talk from "@/components/Talk";
+
+import boxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
+import change from "../assets/graphic-design/desktop/image-change.jpg";
+import science from "../assets/graphic-design/desktop/image-science.jpg";
 
 const graphicDesign = () => {
   return (

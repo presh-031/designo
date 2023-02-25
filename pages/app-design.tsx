@@ -1,13 +1,13 @@
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
+import ProjectType from "@/components/ProjectType";
+import Talk from "@/components/Talk";
 
 import airfilter from "../assets/app-design/desktop/image-airfilter.jpg";
 import eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import faceit from "../assets/app-design/desktop/image-faceit.jpg";
-import todo from "../assets/app-design/desktop/image-todo.jpg";
 import loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
-import ProjectType from "@/components/ProjectType";
-import Talk from "@/components/Talk";
+import todo from "../assets/app-design/desktop/image-todo.jpg";
 
 const appDesign = () => {
   return (

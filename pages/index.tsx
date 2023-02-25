@@ -1,10 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-
-import Hero from "@/components/Hero";
-import Talk from "@/components/Talk";
 import AboutProjects from "@/components/AboutProjects";
+import Hero from "@/components/Hero";
 import ProjectType from "@/components/ProjectType";
+import Talk from "@/components/Talk";
 
 export default function Home() {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
+import illustrationFriendly from "../assets/home/desktop/illustration-friendly.svg";
 import illustrationPassionate from "../assets/home/desktop/illustration-passionate.svg";
 import illustrationResourceful from "../assets/home/desktop/illustration-resourceful.svg";
-import illustrationFriendly from "../assets/home/desktop/illustration-friendly.svg";
 
 const AboutProjects = () => {
   return (

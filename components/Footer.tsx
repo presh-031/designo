@@ -4,10 +4,10 @@ import Nav from "./Nav";
 import logo from "../assets/shared/desktop/logo-light.png";
 
 import facebook from "../assets/shared/desktop/icon-facebook.svg";
-import youtube from "../assets/shared/desktop/icon-youtube.svg";
-import twitter from "../assets/shared/desktop/icon-twitter.svg";
-import pinterest from "../assets/shared/desktop/icon-pinterest.svg";
 import instagram from "../assets/shared/desktop/icon-instagram.svg";
+import pinterest from "../assets/shared/desktop/icon-pinterest.svg";
+import twitter from "../assets/shared/desktop/icon-twitter.svg";
+import youtube from "../assets/shared/desktop/icon-youtube.svg";
 const Footer = () => {
   return (
     <footer className="bg-black px-[2.4rem] pt-[25.35rem] text-center  font-normal text-white">

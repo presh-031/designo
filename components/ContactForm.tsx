@@ -1,5 +1,4 @@
 import { useState } from "react";
-import WhiteButton from "./WhiteButton";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -7,6 +6,7 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const [showErrorMsg, setShowErrorMsg] = useState(false);
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
@@ -24,6 +24,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     console.log(name, email, phone, message);
+
+    if (!name || !email || !phone || !message) {
+      setShowErrorMsg(true);
+    }
   };
   return (
     <div className="bg-peach px-[2.4rem] py-[7.2rem]  text-white">
@@ -51,7 +55,10 @@ const ContactForm = () => {
             onChange={handleNameChange}
             value={name}
           />
-          <p className="pt-[1.1rem]">Can't be empty</p>
+          {showErrorMsg && !name && (
+            <p className="pt-[1.1rem]">Can't be empty</p>
+          )}
+          {/* <ErrorMsg />{" "} */}
         </div>
 
         <div className="flex outline">
@@ -63,7 +70,9 @@ const ContactForm = () => {
             onChange={handleEmailChange}
             value={email}
           />
-          <p className="pt-[1.1rem]">Can't be empty</p>
+          {showErrorMsg && !email && (
+            <p className="pt-[1.1rem]">Can't be empty</p>
+          )}
         </div>
 
         <div className="flex outline">
@@ -75,7 +84,9 @@ const ContactForm = () => {
             onChange={handlePhoneChange}
             value={phone}
           />
-          <p className="pt-[1.1rem]">Can't be empty</p>
+          {showErrorMsg && !phone && (
+            <p className="pt-[1.1rem]">Can't be empty</p>
+          )}
         </div>
 
         <div className="flex outline">
@@ -87,7 +98,9 @@ const ContactForm = () => {
             onChange={handleMessageChange}
             value={message}
           ></textarea>
-          <p className="pt-[1.1rem]">Can't be empty</p>
+          {showErrorMsg && !message && (
+            <p className="pt-[1.1rem]">Can't be empty</p>
+          )}
         </div>
 
         <button className="mx-auto block rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey">

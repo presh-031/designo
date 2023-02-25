@@ -1,5 +1,3 @@
-import Image from "next/image";
-import imgHeroPhone from "../assets/home/desktop/image-hero-phone.png";
 import WhiteButton from "./WhiteButton";
 
 const Hero = () => {

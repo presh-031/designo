@@ -1,5 +1,5 @@
-import canada from "../assets/shared/desktop/illustration-canada.svg";
 import australia from "../assets/shared/desktop/illustration-australia.svg";
+import canada from "../assets/shared/desktop/illustration-canada.svg";
 import unitedKingdom from "../assets/shared/desktop/illustration-united-kingdom.svg";
 
 import SeeLocation from "./SeeLocation";

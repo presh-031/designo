@@ -1,6 +1,5 @@
 import AllLocations from "@/components/AllLocations";
 import Talk from "@/components/Talk";
-import Image from "next/image";
 
 const about = () => {
   return (
