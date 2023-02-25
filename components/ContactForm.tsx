@@ -1,6 +1,30 @@
+import { useState } from "react";
 import WhiteButton from "./WhiteButton";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
+  };
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(name, email, phone, message);
+  };
   return (
     <div className="bg-peach px-[2.4rem] py-[7.2rem]  text-white">
       <div className="mb-[3.7rem] text-center">
@@ -14,36 +38,57 @@ const ContactForm = () => {
           drop us a line.
         </p>
       </div>
-      <form className="text-[1.5rem] font-normal leading-[2.6rem]">
-        <input
-          className="mb-[1.4rem] w-full border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
-          type="text"
-          id="name"
-          placeholder="Name"
-          name="name"
-        />
-        <input
-          className="mb-[1.4rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
-          type="text"
-          id="email"
-          placeholder="Email Address"
-          name="email"
-        />
-        <input
-          className="mb-[1.4rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
-          type="text"
-          id="phone"
-          placeholder="Phone"
-          name="email"
-        />
+      <form
+        onSubmit={handleSubmit}
+        className="text-[1.5rem] font-normal leading-[2.6rem]"
+      >
+        <div className="flex outline">
+          <input
+            className="mb-[1.4rem] flex-1 border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            type="text"
+            id="name"
+            placeholder="Name"
+            onChange={handleNameChange}
+            value={name}
+          />
+          <p className="pt-[1.1rem]">Can't be empty</p>
+        </div>
 
-        <textarea
-          className="mb-[5.8rem] w-full  border-b-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
-          name="message"
-          id="message"
-          placeholder="Your Message"
-          rows={4}
-        ></textarea>
+        <div className="flex outline">
+          <input
+            className="mb-[1.4rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            type="text"
+            id="email"
+            placeholder="Email Address"
+            onChange={handleEmailChange}
+            value={email}
+          />
+          <p className="pt-[1.1rem]">Can't be empty</p>
+        </div>
+
+        <div className="flex outline">
+          <input
+            className="mb-[1.4rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            type="text"
+            id="phone"
+            placeholder="Phone"
+            onChange={handlePhoneChange}
+            value={phone}
+          />
+          <p className="pt-[1.1rem]">Can't be empty</p>
+        </div>
+
+        <div className="flex outline">
+          <textarea
+            className="mb-[5.8rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            id="message"
+            placeholder="Your Message"
+            rows={4}
+            onChange={handleMessageChange}
+            value={message}
+          ></textarea>
+          <p className="pt-[1.1rem]">Can't be empty</p>
+        </div>
 
         <button className="mx-auto block rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey">
           submit
