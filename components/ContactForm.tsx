@@ -1,4 +1,7 @@
+import Image from "next/image";
 import { useRef, useState } from "react";
+
+import iconError from "../assets/contact/desktop/icon-error.svg";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -6,13 +9,14 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const [showErrorMsg, setShowErrorMsg] = useState(false);
+
   // Refs for input fields focusing
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const phoneRef = useRef(null);
   const messageRef = useRef(null);
 
-  const [showErrorMsg, setShowErrorMsg] = useState(false);
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
@@ -31,6 +35,14 @@ const ContactForm = () => {
 
     if (!name || !email || !phone || !message) {
       setShowErrorMsg(true);
+    } else {
+      // at this point a post req should go to a server.
+
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setShowErrorMsg(false);
     }
   };
   return (
@@ -50,9 +62,12 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="text-[1.5rem] font-normal leading-[2.6rem]"
       >
-        <div className="flex outline">
+        <div
+          className="flex  border-b-[1px] border-white
+"
+        >
           <input
-            className="mb-[1.4rem] flex-1 border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            className=" flex-1 bg-transparent  px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
             type="text"
             id="name"
             placeholder="Name"
@@ -65,17 +80,26 @@ const ContactForm = () => {
               onClick={() => {
                 nameRef.current.focus();
               }}
-              className="pt-[1.1rem]"
+              className=" pt-[2.5rem]  text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
               Can't be empty
+              <Image
+                className="ml-[0.9rem] inline-block"
+                src={iconError}
+                alt="error"
+              />
             </p>
           )}
           {/* <ErrorMsg />{" "} */}
         </div>
 
-        <div className="flex outline">
+        <div
+          className="flex  border-b-[1px] border-white
+"
+        >
+          {" "}
           <input
-            className="mb-[1.4rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            className=" flex-1 bg-transparent  px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
             type="text"
             id="email"
             placeholder="Email Address"
@@ -88,16 +112,25 @@ const ContactForm = () => {
               onClick={() => {
                 emailRef.current.focus();
               }}
-              className="pt-[1.1rem]"
+              className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
               Can't be empty
+              <Image
+                className="ml-[0.9rem] inline-block"
+                src={iconError}
+                alt="error"
+              />
             </p>
           )}
         </div>
 
-        <div className="flex outline">
+        <div
+          className="flex  border-b-[1px] border-white
+"
+        >
+          {" "}
           <input
-            className="mb-[1.4rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            className=" flex-1 bg-transparent  px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
             type="text"
             id="phone"
             placeholder="Phone"
@@ -110,16 +143,21 @@ const ContactForm = () => {
               onClick={() => {
                 phoneRef.current.focus();
               }}
-              className="pt-[1.1rem]"
+              className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
               Can't be empty
+              <Image
+                className="ml-[0.9rem] inline-block"
+                src={iconError}
+                alt="error"
+              />
             </p>
           )}
         </div>
 
-        <div className="flex outline">
+        <div className="mb-[4rem] flex border-b-[1px] border-white">
           <textarea
-            className="mb-[5.8rem] flex-1   border-[1px] border-white bg-transparent px-[1.377rem] py-[1.1rem] placeholder-white placeholder-opacity-50 outline-none"
+            className=" flex-1 bg-transparent px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
             id="message"
             placeholder="Your Message"
             rows={4}
@@ -132,9 +170,14 @@ const ContactForm = () => {
               onClick={() => {
                 messageRef.current.focus();
               }}
-              className="pt-[1.1rem]"
+              className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
               Can't be empty
+              <Image
+                className="ml-[0.9rem] inline-block"
+                src={iconError}
+                alt="error"
+              />
             </p>
           )}
         </div>
