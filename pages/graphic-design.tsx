@@ -35,10 +35,10 @@ const graphicDesign = () => {
         />
       </div>
 
-      {/* <div className="my-[9.6rem] px-[2.4rem]">
+      <div className="my-[9.6rem] px-[2.4rem]">
         <ProjectType href="/app-design" projectType="APP DESIGN" />
         <ProjectType href="/web-design" projectType="WEB DESIGN" />
-      </div> */}
+      </div>
     </div>
   );
 };
