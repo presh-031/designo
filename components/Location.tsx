@@ -20,7 +20,7 @@ type LocationProps = {
 
 const Location = (props: LocationProps) => {
   return (
-    <div id={props.id} className="">
+    <div id={props.id} className="outline">
       <div className="h-[32rem] ">
         {/* <MapContainer
           center={[51.505, -0.09]}
