@@ -1,9 +1,6 @@
 // React-leaflet setup for Next.js
 import dynamic from "next/dynamic";
-
-const MapWithNoSSR = dynamic(() => import("./Map"), {
-  ssr: false,
-});
+import React from "react";
 
 type LocationProps = {
   location: string;
@@ -16,10 +13,25 @@ type LocationProps = {
 };
 
 const Location = (props: LocationProps) => {
+  // React-leaflet setup for Next.js
+  const Map = React.useMemo(
+    () =>
+      dynamic(
+        () => import("./Map"), // replace '@components/map' with your component's location
+        {
+          loading: () => <p>A map is loading</p>,
+          ssr: false, // This line is important. It's what prevents server-side render
+        }
+      ),
+    [
+      /* list variables which should trigger a re-render here */
+    ]
+  );
+
   return (
-    <div id={props.id} className="outline">
-      <div>
-        <MapWithNoSSR />
+    <div id={props.id}>
+      <div className="h-[32rem]">
+        <Map />
       </div>
       <div className="bg-[#fdf3f0] py-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
