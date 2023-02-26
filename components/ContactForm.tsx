@@ -52,10 +52,10 @@ const ContactForm = () => {
           Contact Us
         </p>
         <p className="text-[1.5rem] font-normal leading-[2.5rem]">
-          Ready to take it to the next level? Let’s talk about your project or
-          idea and find out how we can help your business grow. If you are
-          looking for unique digital experiences that’s relatable to your users,
-          drop us a line.
+          Ready to take it to the next level? Let&apos;s talk about your project
+          or idea and find out how we can help your business grow. If you are
+          looking for unique digital experiences that&apos;s relatable to your
+          users, drop us a line.
         </p>
       </div>
       <form
@@ -82,7 +82,7 @@ const ContactForm = () => {
               }}
               className=" pt-[2.5rem]  text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
-              Can't be empty
+              Can&apos;t be empty
               <Image
                 className="ml-[0.9rem] inline-block"
                 src={iconError}
@@ -114,7 +114,7 @@ const ContactForm = () => {
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
-              Can't be empty
+              Can&apos;t be empty
               <Image
                 className="ml-[0.9rem] inline-block"
                 src={iconError}
@@ -145,7 +145,7 @@ const ContactForm = () => {
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
-              Can't be empty
+              Can&apos;t be empty
               <Image
                 className="ml-[0.9rem] inline-block"
                 src={iconError}
@@ -172,7 +172,7 @@ const ContactForm = () => {
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
-              Can't be empty
+              Can&apos;t be empty
               <Image
                 className="ml-[0.9rem] inline-block"
                 src={iconError}
