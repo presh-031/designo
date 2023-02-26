@@ -2,10 +2,10 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 type MapProps = {
-  test: string;
+  coordinates: number[];
 };
 const Map = (props: MapProps) => {
-  console.log(props.test);
+  console.log(props.coordinates);
   return (
     <MapContainer
       center={[51.505, -0.09]}

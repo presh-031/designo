@@ -7,6 +7,7 @@ type LocationProps = {
   office: string;
   street: string;
   address: string;
+  addressCoords: number[];
   phone: string;
   mail: string;
   id: string;
@@ -32,7 +33,7 @@ const Location = (props: LocationProps) => {
   return (
     <div id={props.id}>
       <div className="h-[32rem]">
-        <Map test="test" />
+        <Map coordinates={props.addressCoords} />
       </div>
       <div className="bg-[#fdf3f0] pt-[16rem] pb-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
