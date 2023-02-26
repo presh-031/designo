@@ -14,6 +14,7 @@ type LocationProps = {
 
 const Location = (props: LocationProps) => {
   // React-leaflet setup for Next.js
+  // useMemo to avoid flickering
   const Map = React.useMemo(
     () =>
       dynamic(
@@ -31,9 +32,9 @@ const Location = (props: LocationProps) => {
   return (
     <div id={props.id}>
       <div className="h-[32rem]">
-        <Map />
+        <Map test="test" />
       </div>
-      <div className="bg-[#fdf3f0] py-[8.0rem] text-center">
+      <div className="bg-[#fdf3f0] pt-[16rem] pb-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
           {props.location}
         </p>
