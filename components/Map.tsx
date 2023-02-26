@@ -5,10 +5,9 @@ type MapProps = {
   coordinates: number[];
 };
 const Map = (props: MapProps) => {
-  console.log(props.coordinates);
   return (
     <MapContainer
-      center={[51.505, -0.09]}
+      center={[props.coordinates[0], props.coordinates[1]]}
       zoom={13}
       scrollWheelZoom={false}
       style={{ height: 400, width: "100%" }}
@@ -17,7 +16,7 @@ const Map = (props: MapProps) => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[51.505, -0.09]}>
+      <Marker position={[props.coordinates[0], props.coordinates[1]]}>
         <Popup>
           Our office here <br />
         </Popup>
