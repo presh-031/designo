@@ -1,12 +1,9 @@
-// React-leaflet setup
-// import { MapContainer, TileLayer, useMap } from "react-leaflet";
-// import "leaflet/dist/leaflet.css";
+// React-leaflet setup for Next.js
+import dynamic from "next/dynamic";
 
-// import dynamic from "next/dynamic";
-
-// const DynamicMap = dynamic(() => import("react-leaflet"), {
-//   ssr: false,
-// });
+const MapWithNoSSR = dynamic(() => import("./Map"), {
+  ssr: false,
+});
 
 type LocationProps = {
   location: string;
@@ -21,22 +18,8 @@ type LocationProps = {
 const Location = (props: LocationProps) => {
   return (
     <div id={props.id} className="outline">
-      <div className="h-[32rem] ">
-        {/* <MapContainer
-          center={[51.505, -0.09]}
-          zoom={13}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer> */}
+      <div>
+        <MapWithNoSSR />
       </div>
       <div className="bg-[#fdf3f0] py-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
