@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { SetStateAction, useRef, useState } from "react";
 
 import iconError from "../assets/contact/desktop/icon-error.svg";
 
@@ -17,7 +17,9 @@ const ContactForm = () => {
   const phoneRef = useRef(null);
   const messageRef = useRef(null);
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setName(e.target.value);
   };
   const handleEmailChange = (e) => {
