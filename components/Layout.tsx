@@ -12,18 +12,18 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout = (props: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  const getIsOpen = (isOpen: boolean) => {
+  const getIsOpen = (isOpen: boolean): any => {
     setMenuOpen(isOpen);
   };
+
   return (
     <div className={jost.className}>
       <Header getIsOpen={getIsOpen} />
       {menuOpen && <Nav />}
-      {/* <Nav /> */}
-      {props.children}
+      {children}
       <Footer />
     </div>
   );
