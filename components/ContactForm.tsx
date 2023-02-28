@@ -12,25 +12,25 @@ const ContactForm = () => {
   const [showErrorMsg, setShowErrorMsg] = useState(false);
 
   // Refs for input fields focusing
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const phoneRef = useRef(null);
-  const messageRef = useRef(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const phoneRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
   };
-  const handleMessageChange = (e) => {
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!name || !email || !phone || !message) {
@@ -78,7 +78,7 @@ const ContactForm = () => {
           {showErrorMsg && !name && (
             <p
               onClick={() => {
-                nameRef.current.focus();
+                nameRef.current?.focus();
               }}
               className=" pt-[2.5rem]  text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
@@ -110,7 +110,7 @@ const ContactForm = () => {
           {showErrorMsg && !email && (
             <p
               onClick={() => {
-                emailRef.current.focus();
+                emailRef.current?.focus();
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
@@ -141,7 +141,7 @@ const ContactForm = () => {
           {showErrorMsg && !phone && (
             <p
               onClick={() => {
-                phoneRef.current.focus();
+                phoneRef.current?.focus();
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
@@ -168,7 +168,7 @@ const ContactForm = () => {
           {showErrorMsg && !message && (
             <p
               onClick={() => {
-                messageRef.current.focus();
+                messageRef.current?.focus();
               }}
               className="pt-[2.5rem] text-[1.2rem] font-normal italic leading-[2.6rem]"
             >
