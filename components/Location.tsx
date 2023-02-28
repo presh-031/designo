@@ -21,7 +21,11 @@ const Location = (props: LocationProps) => {
       dynamic(
         () => import("./Map"), // replace '@components/map' with your component's location
         {
-          loading: () => <p>A map is loading</p>,
+          loading: () => (
+            <p className="grid h-full place-items-center text-[4rem] text-peach">
+              Loading Map...
+            </p>
+          ),
           ssr: false, // This line is important. It's what prevents server-side render
         }
       ),
@@ -35,7 +39,7 @@ const Location = (props: LocationProps) => {
       <div className="h-[32rem]">
         <Map coordinates={props.addressCoords} />
       </div>
-      <div className="bg-[#fdf3f0] pt-[16rem] pb-[8.0rem] text-center">
+      <div className="bg-[#fdf3f0] py-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
           {props.location}
         </p>
