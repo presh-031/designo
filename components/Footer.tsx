@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Nav from "./Nav";
 
 import logo from "../assets/shared/desktop/logo-light.png";
 
+import Link from "next/link";
 import facebook from "../assets/shared/desktop/icon-facebook.svg";
 import instagram from "../assets/shared/desktop/icon-instagram.svg";
 import pinterest from "../assets/shared/desktop/icon-pinterest.svg";
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-black px-[2.4rem] pt-[25.35rem] text-center  font-normal text-white">
       <div>
-        <div className="border-b-[1px] border-white border-opacity-50">
+        <div className="mb-[3.2rem] border-b-[1px] border-white border-opacity-50">
           <Image
             className=" mx-auto  mb-[3.2rem]"
             src={logo}
@@ -20,8 +20,18 @@ const Footer = () => {
             width={202}
             height={27}
           />
-        </div>
-        <Nav />
+        </div>{" "}
+        <ul className=" flex flex-col gap-[3.2rem] text-[1.4rem]  font-normal leading-[1.4rem] tracking-[0.2rem]">
+          <li>
+            <Link href="/about">OUR COMPANY</Link>
+          </li>
+          <li>
+            <Link href="/locations">LOCATIONS</Link>
+          </li>
+          <li>
+            <Link href="/contact">CONTACT</Link>
+          </li>
+        </ul>
       </div>
       <div className="mt-[4rem] flex flex-col gap-[4rem] pb-[6.4rem]">
         <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50">
