@@ -16,7 +16,12 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between px-[2.4rem] py-[3.9rem]  ">
-      <Link href="/">
+      <Link
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        href="/"
+      >
         <Image src={logo} alt="designo-logo" width={202} height={27} />
       </Link>
       <div onClick={handleMenuClick}>
