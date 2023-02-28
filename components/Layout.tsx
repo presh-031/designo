@@ -11,17 +11,9 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
-  // const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-  // const getIsOpen = (isOpen: boolean): any => {
-  //   setMenuOpen(isOpen);
-  // };
-
   return (
     <div className={`${jost.className} relative`}>
-      {/* <Header getIsOpen={getIsOpen} /> */}
       <Header />
-      {/* {menuOpen && <Nav />} */}
       {children}
       <Footer />
     </div>
