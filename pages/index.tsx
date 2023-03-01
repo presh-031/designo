@@ -1,7 +1,7 @@
 import AboutProjects from "@/components/AboutProjects";
-import Talk from "@/components/Cta";
 import Hero from "@/components/Hero";
 import ProjectType from "@/components/ProjectType";
+import Talk from "@/components/Cta";
 
 export default function Home() {
   return (

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import rightArrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 type ProjectTypeProps = {
   href: string;
@@ -25,9 +27,9 @@ const ProjectType = ({ href, projectType, imageNumber }: ProjectTypeProps) => {
       <p className="mb-[1.197rem] text-[2.8rem] leading-[3.6rem] tracking-[0.14rem]">
         {projectType}
       </p>
-      <p className="text-[1.5rem] leading-[2.1rem] tracking-[0.5rem]">
+      <p className="flex items-center gap-[1.6rem] text-[1.5rem] leading-[2.1rem] tracking-[0.5rem] ">
         VIEW PROJECTS
-        <span></span>
+        <Image src={rightArrow} alt="arrow-right" />
       </p>
     </Link>
   );
