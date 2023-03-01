@@ -1,16 +1,23 @@
 import Image from "next/image";
-
-import logo from "../assets/shared/desktop/logo-light.png";
-
 import Link from "next/link";
+import { useRouter } from "next/router";
 import facebook from "../assets/shared/desktop/icon-facebook.svg";
 import instagram from "../assets/shared/desktop/icon-instagram.svg";
 import pinterest from "../assets/shared/desktop/icon-pinterest.svg";
 import twitter from "../assets/shared/desktop/icon-twitter.svg";
 import youtube from "../assets/shared/desktop/icon-youtube.svg";
+import logo from "../assets/shared/desktop/logo-light.png";
+
 const Footer = () => {
+  const router = useRouter();
+  const isContactPage = router.pathname === "/contact";
+
   return (
-    <footer className="bg-black px-[2.4rem] pt-[25.35rem] text-center  font-normal text-white">
+    <footer
+      className={`bg-black px-[2.4rem] ${
+        isContactPage ? "pt-[6.4rem]" : "pt-[25.35rem]"
+      } text-center  font-normal text-white`}
+    >
       <div>
         {/* <div className="mb-[3.2rem] border-b-[1px] border-white border-opacity-50"> */}
         <Link
@@ -24,7 +31,7 @@ const Footer = () => {
             width={202}
             height={27}
           />
-        </Link>{" "}
+        </Link>
         <ul className=" flex flex-col gap-[3.2rem] text-[1.4rem]  font-normal leading-[1.4rem] tracking-[0.2rem]">
           <li>
             <Link href="/about">OUR COMPANY</Link>
