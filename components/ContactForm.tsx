@@ -100,7 +100,7 @@ const ContactForm = () => {
           {" "}
           <input
             className=" flex-1 bg-transparent  px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
-            type="text"
+            type="email"
             id="email"
             placeholder="Email Address"
             onChange={handleEmailChange}
@@ -131,7 +131,7 @@ const ContactForm = () => {
           {" "}
           <input
             className=" flex-1 bg-transparent  px-[1.377rem] pb-[1.1rem] pt-[2.5rem] placeholder-white placeholder-opacity-50 outline-none"
-            type="text"
+            type="number"
             id="phone"
             placeholder="Phone"
             onChange={handlePhoneChange}
