@@ -18,11 +18,23 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem] outline">
-          <ProjectType href="/web-design" projectType="WEB DESIGN" />
+        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem]">
+          <ProjectType
+            href="/web-design"
+            projectType="WEB DESIGN"
+            imageNumber={1}
+          />
           <div className="flex flex-col gap-[2.4rem]">
-            <ProjectType href="/app-design" projectType="APP DESIGN" />
-            <ProjectType href="/graphic-design" projectType="GRAPHIC DESIGN" />
+            <ProjectType
+              href="/app-design"
+              projectType="APP DESIGN"
+              imageNumber={2}
+            />
+            <ProjectType
+              href="/graphic-design"
+              projectType="GRAPHIC DESIGN"
+              imageNumber={3}
+            />
           </div>
         </div>
 

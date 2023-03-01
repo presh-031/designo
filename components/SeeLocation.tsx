@@ -14,7 +14,8 @@ const SeeLocation = ({
   href,
   gradientDirection,
 }: seeLocationProps) => {
-  const gradient = `linear-gradient(${gradientDirection}, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.2) 100%)`;
+  const gradient = `linear-gradient(${gradientDirection}, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)`;
+
   return (
     <div className="text-center font-normal ">
       <div

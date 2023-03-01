@@ -14,13 +14,9 @@ const Hero = () => {
         </p>
         <WhiteButton text="learn more" url="/about" />
       </div>
-      <div className="h-[37.1rem] bg-[url('../assets/home/desktop/image-hero-phone.png')] bg-top bg-no-repeat px-[2.1rem] outline ">
-        {/* <Image
-          className="object-cover outline border-2 border-red-800"
-          src={imgHeroPhone}
-          alt="hero-phone"
-        /> */}
-      </div>
+
+      {/* h-37.1rem? */}
+      <div className="h-[47.1rem] bg-[url('../assets/home/desktop/image-hero-phone.png')]  bg-[center_top_-6.55rem]  bg-no-repeat px-[2.1rem]"></div>
     </div>
   );
 };

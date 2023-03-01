@@ -17,3 +17,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ProjectType background images */
+.bg-image-1 {
+  background-image: url("../assets/home/mobile/image-web-design.jpg");
+}
+
+.bg-image-2 {
+  background-image: url("../assets/home/mobile/image-app-design.jpg");
+}
+
+.bg-image-3 {
+  background-image: url("../assets/home/mobile/image-graphic-design.jpg");
+}
