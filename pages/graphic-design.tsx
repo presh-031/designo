@@ -37,8 +37,16 @@ const graphicDesign = () => {
       </div>
 
       <div className="mt-[9.6rem] mb-[-9.4rem] flex flex-col gap-[2.4rem] border border-red-800 px-[2.4rem]">
-        <ProjectType href="/app-design" projectType="APP DESIGN" />
-        <ProjectType href="/web-design" projectType="WEB DESIGN" />
+        <ProjectType
+          href="/app-design"
+          projectType="APP DESIGN"
+          imageNumber={2}
+        />
+        <ProjectType
+          href="/web-design"
+          projectType="WEB DESIGN"
+          imageNumber={1}
+        />
       </div>
 
       <Talk />

@@ -2,13 +2,11 @@ import Link from "next/link";
 
 type ProjectTypeProps = {
   href: string;
-  // bgUrl: string;
   projectType: string;
   imageNumber: number;
 };
-const ProjectType = ({ href, projectType, imageNumber }: ProjectTypeProps) => {
-  // const { imageNumber } = props;
 
+const ProjectType = ({ href, projectType, imageNumber }: ProjectTypeProps) => {
   let bgClass;
 
   if (imageNumber === 1) {
