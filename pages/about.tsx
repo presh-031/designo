@@ -22,7 +22,7 @@ const about = () => {
 
       <div>
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-world-class-talent.jpg')]"></div>
-        <div className="py-[8rem] px-[2.4rem] text-center ">
+        <div className="bg-[#fdf3f0] py-[8rem] px-[2.4rem] text-center ">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
             World-class talent
           </p>
@@ -44,9 +44,9 @@ const about = () => {
 
       <AllLocations />
 
-      <div>
+      <div className="">
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-real-deal.jpg')]"></div>
-        <div className="py-[8rem] px-[2.4rem] text-center ">
+        <div className="bg-[#fdf3f0] py-[8rem] px-[2.4rem] text-center ">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
             The real deal
           </p>

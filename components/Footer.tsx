@@ -12,15 +12,19 @@ const Footer = () => {
   return (
     <footer className="bg-black px-[2.4rem] pt-[25.35rem] text-center  font-normal text-white">
       <div>
-        <div className="mb-[3.2rem] border-b-[1px] border-white border-opacity-50">
+        {/* <div className="mb-[3.2rem] border-b-[1px] border-white border-opacity-50"> */}
+        <Link
+          href="/"
+          className="mb-[3.2rem] block border-b-[1px] border-white border-opacity-50"
+        >
           <Image
-            className=" mx-auto  mb-[3.2rem]"
+            className="mx-auto mb-[3.2rem]"
             src={logo}
             alt="designo-logo"
             width={202}
             height={27}
           />
-        </div>{" "}
+        </Link>{" "}
         <ul className=" flex flex-col gap-[3.2rem] text-[1.4rem]  font-normal leading-[1.4rem] tracking-[0.2rem]">
           <li>
             <Link href="/about">OUR COMPANY</Link>
