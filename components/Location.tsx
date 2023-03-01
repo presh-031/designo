@@ -1,6 +1,6 @@
+import React from "react";
 // React-leaflet setup for Next.js
 import dynamic from "next/dynamic";
-import React from "react";
 
 type LocationProps = {
   location: string;
@@ -39,7 +39,7 @@ const Location = (props: LocationProps) => {
       <div className="h-[32rem]">
         <Map coordinates={props.addressCoords} />
       </div>
-      <div className="bg-[#fdf3f0] py-[8.0rem] text-center">
+      <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8.0rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
           {props.location}
         </p>

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { useRef, useState } from "react";
 
+import Image from "next/image";
 import iconError from "../assets/contact/desktop/icon-error.svg";
 
 const ContactForm = () => {
@@ -46,7 +46,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="bg-peach px-[2.4rem] py-[7.2rem]  text-white">
+    <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem]  text-white">
       <div className="mb-[3.7rem] text-center">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem]">
           Contact Us

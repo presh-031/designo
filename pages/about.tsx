@@ -6,7 +6,7 @@ const about = () => {
     <div>
       <div>
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-about-hero.jpg')]  bg-center "></div>
-        <div className="bg-peach py-[8rem] px-[2.4rem] text-center text-white">
+        <div className=" bg-peach bg-[url('../assets/shared/desktop/bg-pattern-small-circle.svg')] bg-no-repeat py-[8rem] px-[2.4rem] text-center text-white">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem]">
             About Us
           </p>
@@ -22,7 +22,7 @@ const about = () => {
 
       <div>
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-world-class-talent.jpg')]"></div>
-        <div className="bg-[#fdf3f0] py-[8rem] px-[2.4rem] text-center ">
+        <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8rem] px-[2.4rem] text-center ">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
             World-class talent
           </p>
@@ -46,7 +46,7 @@ const about = () => {
 
       <div className="">
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-real-deal.jpg')]"></div>
-        <div className="bg-[#fdf3f0] py-[8rem] px-[2.4rem] text-center ">
+        <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8rem] px-[2.4rem] text-center ">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach">
             The real deal
           </p>
