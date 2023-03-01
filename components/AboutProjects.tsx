@@ -6,9 +6,15 @@ import illustrationResourceful from "../assets/home/desktop/illustration-resourc
 
 const AboutProjects = () => {
   return (
-    <div className="flex flex-col gap-[8rem]  text-center   outline ">
+    <div className="flex flex-col gap-[8rem]  text-center">
       <div className="px-[2.4rem] text-dark-grey ">
-        <div className="mx-auto inline-block rounded-full border border-red-800">
+        <div
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
+          }}
+          className="mx-auto inline-block rounded-full"
+        >
           <Image className="" src={illustrationPassionate} alt="passionate" />
         </div>
         <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
@@ -22,7 +28,13 @@ const AboutProjects = () => {
       </div>
 
       <div className="px-[2.4rem] text-dark-grey ">
-        <div className="mx-auto inline-block rounded-full border border-red-800">
+        <div
+          style={{
+            background:
+              "linear-gradient(-90deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
+          }}
+          className="mx-auto inline-block rounded-full"
+        >
           <Image className="" src={illustrationResourceful} alt="resourceful" />
         </div>
         <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
@@ -36,7 +48,13 @@ const AboutProjects = () => {
       </div>
 
       <div className="px-[2.4rem] text-dark-grey ">
-        <div className="mx-auto inline-block rounded-full border border-red-800">
+        <div
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
+          }}
+          className="mx-auto inline-block rounded-full"
+        >
           <Image className="" src={illustrationFriendly} alt="friendly" />
         </div>
         <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
