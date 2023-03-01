@@ -19,7 +19,6 @@ const Footer = () => {
       } text-center  font-normal text-white`}
     >
       <div>
-        {/* <div className="mb-[3.2rem] border-b-[1px] border-white border-opacity-50"> */}
         <Link
           href="/"
           className="mb-[3.2rem] block border-b-[1px] border-white border-opacity-50"
