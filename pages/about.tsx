@@ -1,5 +1,5 @@
 import AllLocations from "@/components/AllLocations";
-import Talk from "@/components/Talk";
+import Talk from "@/components/Cta";
 
 const about = () => {
   return (

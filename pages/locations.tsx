@@ -1,5 +1,5 @@
+import Talk from "@/components/Cta";
 import Location from "@/components/Location";
-import Talk from "@/components/Talk";
 
 const locations = () => {
   return (

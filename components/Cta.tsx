@@ -1,6 +1,6 @@
 import WhiteButton from "./WhiteButton";
 
-const Talk = () => {
+const Cta = () => {
   return (
     <div className="relative top-[18.95rem] mx-[2.4rem] mt-[-6.85rem]  rounded-2xl bg-peach px-[2.4rem] py-[6.4rem] text-center text-white">
       <p className="mb-[0.6rem] text-[3.2rem] font-medium leading-[3.6rem]">
@@ -15,4 +15,4 @@ const Talk = () => {
   );
 };
 
-export default Talk;
+export default Cta;

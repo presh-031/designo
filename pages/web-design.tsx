@@ -1,14 +1,14 @@
+import Talk from "@/components/Cta";
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
-import Talk from "@/components/Talk";
-
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
 import express from "../assets/web-design/desktop/image-express.jpg";
 import photon from "../assets/web-design/desktop/image-photon.jpg";
 import transfer from "../assets/web-design/desktop/image-transfer.jpg";
+
 const webDesign = () => {
   return (
     <div>
