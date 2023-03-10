@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
 import logo from "../assets/shared/desktop/logo-dark.png";
 import closeMenu from "../assets/shared/mobile/icon-close.svg";
 import hamburgerMenu from "../assets/shared/mobile/icon-hamburger.svg";
@@ -15,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-[2.4rem] py-[3.9rem]  ">
+    <header className="flex items-center justify-between px-[2.4rem] py-[3.5rem]  ">
       <Link
         onClick={() => {
           setIsOpen(false);
