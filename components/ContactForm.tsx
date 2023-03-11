@@ -46,18 +46,20 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem]  text-white">
-      <div className="mb-[3.7rem] text-center">
-        <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem]">
+    <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem] text-white sm:mx-[4rem] sm:rounded-2xl  sm:px-[3.8rem] md:px-[5.8rem]">
+      <div className="mb-[3.7rem] text-center sm:text-left">
+        <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] sm:mb-[3.2rem] sm:text-[4.8rem] sm:leading-[4.8rem]">
           Contact Us
         </p>
-        <p className="text-[1.5rem] font-normal leading-[2.5rem]">
+        <p className="text-[1.5rem] font-normal leading-[2.5rem] sm:text-[1.6rem] sm:leading-[2.6rem]">
           Ready to take it to the next level? Let&apos;s talk about your project
           or idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that&apos;s relatable to your
           users, drop us a line.
         </p>
       </div>
+
+      {/* Check form specifics for match with design */}
       <form
         onSubmit={handleSubmit}
         className="text-[1.5rem] font-normal leading-[2.6rem]"
