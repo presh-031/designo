@@ -2,6 +2,8 @@ import Talk from "@/components/Cta";
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
+import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
+import ProjectsCard from "@/ui/ProjectsCard";
 import airfilter from "../assets/app-design/desktop/image-airfilter.jpg";
 import eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import faceit from "../assets/app-design/desktop/image-faceit.jpg";
@@ -15,7 +17,7 @@ const appDesign = () => {
         title="App Design"
         aboutTitle="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
-      <div className="grid grid-cols-1 gap-[4rem] px-[2.4rem] pt-[9.6rem]">
+      <ProjectsCard>
         <Project
           src={airfilter}
           alt="airfilter"
@@ -46,9 +48,9 @@ const appDesign = () => {
           title="tim brown"
           info="A VR experience app made for Loopstudios"
         />
-      </div>
+      </ProjectsCard>
 
-      <div className="mt-[9.6rem] mb-[-9.4rem] flex flex-col gap-[2.4rem]  px-[2.4rem]">
+      <OtherProjectTypesCard>
         <ProjectType
           href="/web-design"
           projectType="WEB DESIGN"
@@ -59,7 +61,7 @@ const appDesign = () => {
           projectType="GRAPHIC DESIGN"
           imageNumber={3}
         />
-      </div>
+      </OtherProjectTypesCard>
 
       <Talk />
     </div>

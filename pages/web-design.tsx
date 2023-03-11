@@ -2,6 +2,8 @@ import Talk from "@/components/Cta";
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
+import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
+import ProjectsCard from "@/ui/ProjectsCard";
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
@@ -16,7 +18,7 @@ const webDesign = () => {
         title="Web Design"
         aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
       />
-      <div className="grid grid-cols-1 gap-[4rem] px-[2.4rem] pt-[9.6rem]">
+      <ProjectsCard>
         <Project
           src={express}
           alt="express"
@@ -53,9 +55,9 @@ const webDesign = () => {
           title="camp"
           info="A multi-carrier shipping website for ecommerce businesses"
         />
-      </div>
+      </ProjectsCard>
 
-      <div className="mt-[9.6rem] mb-[-9.4rem] flex flex-col gap-[2.4rem] px-[2.4rem]">
+      <OtherProjectTypesCard>
         <ProjectType
           href="/app-design"
           projectType="APP DESIGN"
@@ -66,7 +68,7 @@ const webDesign = () => {
           projectType="GRAPHIC DESIGN"
           imageNumber={3}
         />
-      </div>
+      </OtherProjectTypesCard>
 
       <Talk />
     </div>
