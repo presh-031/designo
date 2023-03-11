@@ -1,39 +1,44 @@
 import Image from "next/image";
-
 import illustrationFriendly from "../assets/home/desktop/illustration-friendly.svg";
 import illustrationPassionate from "../assets/home/desktop/illustration-passionate.svg";
 import illustrationResourceful from "../assets/home/desktop/illustration-resourceful.svg";
 
 const AboutProjects = () => {
   return (
-    <div className="flex flex-col gap-[8rem]  text-center">
-      <div className="px-[2.4rem] text-dark-grey ">
+    <div className="flex flex-col gap-[8rem] text-center  outline">
+      <div className="px-[2.4rem] text-dark-grey outline  sm:flex sm:gap-[4.8rem] sm:px-[3.9rem] ">
         <div
           style={{
             background:
               "linear-gradient(180deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
           }}
-          className="mx-auto inline-block rounded-full"
+          className="mx-auto inline-block rounded-full outline "
         >
-          <Image className="" src={illustrationPassionate} alt="passionate" />
+          <Image
+            src={illustrationPassionate}
+            alt="passionate"
+            className="border border-red-800 sm:overflow-visible "
+          />
         </div>
-        <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem]">
-          PASSIONATE
-        </p>
-        <p className="text-[1.6rem] font-normal leading-[2.6rem] ">
-          Each project starts with an in-depth brand research to ensure we only
-          create products that serve a purpose. We merge art, design, and
-          technology into exciting new solutions.
-        </p>
+        <div className="outline sm:flex sm:flex-col sm:justify-center sm:text-left">
+          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:m-0 sm:mb-[1.6rem]">
+            PASSIONATE
+          </p>
+          <p className="text-[1.6rem] font-normal leading-[2.6rem] ">
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
+        </div>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey ">
+      <div className="px-[2.4rem] text-dark-grey outline ">
         <div
           style={{
             background:
               "linear-gradient(-90deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
           }}
-          className="mx-auto inline-block rounded-full"
+          className="mx-auto inline-block  rounded-full"
         >
           <Image className="" src={illustrationResourceful} alt="resourceful" />
         </div>
@@ -47,7 +52,7 @@ const AboutProjects = () => {
         </p>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey ">
+      <div className="px-[2.4rem] text-dark-grey outline ">
         <div
           style={{
             background:

@@ -30,3 +30,16 @@ html {
 .bg-image-3 {
   background-image: url("../assets/home/mobile/image-graphic-design.jpg");
 }
+
+@media (min-width: 640px) {
+  .bg-image-1 {
+    background-image: url("../assets/home/tablet/image-web-design.jpg");
+  }
+  .bg-image-2 {
+    background-image: url("../assets/home/tablet/image-app-design.jpg");
+  }
+
+  .bg-image-3 {
+    background-image: url("../assets/home/tablet/image-graphic-design.jpg");
+  }
+}

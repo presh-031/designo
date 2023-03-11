@@ -1,7 +1,7 @@
 import AboutProjects from "@/components/AboutProjects";
+import Talk from "@/components/Cta";
 import Hero from "@/components/Hero";
 import ProjectType from "@/components/ProjectType";
-import Talk from "@/components/Cta";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem]">
+        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem] sm:px-[4rem]">
           <ProjectType
             href="/web-design"
             projectType="WEB DESIGN"

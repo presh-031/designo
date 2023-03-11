@@ -2,12 +2,12 @@ import WhiteButton from "./WhiteButton";
 
 const Hero = () => {
   return (
-    <div className=" bg-peach bg-[url('../assets/home/desktop/bg-pattern-hero-home.svg')] bg-left bg-no-repeat px-[2.4rem] pt-[8.0rem] text-center text-white">
-      <div>
-        <p className="mb-[1.4rem]  text-[3.2rem] font-medium leading-[3.6rem]">
-          Award-winning custom designs and digital branding solutions.
+    <div className=" bg-peach bg-[url('../assets/home/desktop/bg-pattern-hero-home.svg')] bg-left bg-no-repeat px-[2.4rem] pt-[8.0rem] text-center text-white sm:mx-[4rem] sm:rounded-2xl sm:pt-[6rem]">
+      <div className="outline">
+        <p className="mb-[1.4rem] text-[3.2rem] font-medium leading-[3.6rem]  sm:mb-[0.80rem] sm:text-[4.8rem] sm:leading-[4.8rem]">
+          Award-winning custom designs and digital branding solutions
         </p>
-        <p className="mb-[2.4rem] text-[1.5rem] font-normal leading-[2.5rem]">
+        <p className="mb-[2.4rem] text-[1.5rem] font-normal leading-[2.5rem] sm:mb-[1.90rem] sm:px-[6.9rem] sm:text-[1.6rem] sm:leading-[2.6rem]">
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.

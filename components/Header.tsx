@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-[2.4rem] py-[3.5rem]  ">
+    <header className="flex items-center justify-between px-[2.4rem] py-[3.5rem]  sm:py-[6.4rem] sm:px-[3.9rem]  ">
       <Link
         onClick={() => {
           setIsOpen(false);
@@ -23,11 +23,24 @@ const Header = () => {
       >
         <Image src={logo} alt="designo-logo" width={202} height={27} />
       </Link>
-      <div onClick={handleMenuClick}>
+
+      <ul className="hidden text-[1.4rem]  sm:flex sm:items-center  sm:gap-[2rem] sm:font-normal  sm:leading-[1.4rem] sm:tracking-[2px] sm:text-dark-grey min-[680px]:gap-[4.2rem] ">
+        <li>
+          <Link href="/about">OUR COMPANY</Link>
+        </li>
+        <li>
+          <Link href="/locations">LOCATIONS</Link>
+        </li>
+        <li>
+          <Link href="/contact">CONTACT</Link>
+        </li>
+      </ul>
+
+      <div onClick={handleMenuClick} className="sm:hidden">
         {isOpen ? (
-          <Image src={closeMenu} alt="menu" width={24} height={20} />
+          <Image src={closeMenu} alt="closemenu" width={24} height={20} />
         ) : (
-          <Image src={hamburgerMenu} alt="menu" width={24} height={20} />
+          <Image src={hamburgerMenu} alt="openmenu" width={24} height={20} />
         )}
       </div>
       {isOpen && <Nav setIsOpen={setIsOpen} />}
