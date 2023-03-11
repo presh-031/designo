@@ -14,24 +14,26 @@ const Footer = () => {
 
   return (
     <footer
-      className={`bg-black px-[2.4rem] ${
-        isContactPage ? "pt-[6.4rem]" : "pt-[25.35rem]"
-      } text-center  font-normal text-white`}
+      className={`bg-black px-[2.4rem]  ${
+        isContactPage
+          ? "pt-[6.4rem] sm:pt-[8.0rem]"
+          : "pt-[25.35rem] sm:pt-[16.6rem]"
+      } text-center font-normal text-white  sm:px-[3.9rem] `}
     >
-      <div>
+      <div className=" sm:flex sm:justify-between sm:border-b-[1px] sm:border-white sm:border-opacity-10 sm:pb-[4rem]">
         <Link
           href="/"
-          className="mb-[3.2rem] block border-b-[1px] border-white border-opacity-50"
+          className="mb-[3.2rem] block border-b-[1px] border-white border-opacity-10 sm:mb-0  sm:border-none"
         >
           <Image
-            className="mx-auto mb-[3.2rem]"
+            className="mx-auto mb-[3.2rem] sm:mb-0"
             src={logo}
             alt="designo-logo"
             width={202}
             height={27}
           />
         </Link>
-        <ul className=" flex flex-col gap-[3.2rem] text-[1.4rem]  font-normal leading-[1.4rem] tracking-[0.2rem]">
+        <ul className=" flex flex-col gap-[2.2rem] text-[1.4rem] font-normal leading-[1.4rem] tracking-[0.2rem] max-[639px]:gap-[3.2rem]  sm:flex-row sm:items-center min-[700px]:gap-[4.2rem]">
           <li>
             <Link href="/about">OUR COMPANY</Link>
           </li>
@@ -43,7 +45,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-[4rem] flex flex-col gap-[4rem] pb-[6.4rem]">
+
+      <div className="mt-[4rem] flex flex-col gap-[4rem]   pb-[6.4rem] sm:justify-between min-[717px]:flex-row min-[717px]:text-left">
         <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50">
           <li className="font-bold">Designo Central Office</li>
           <li>3886 Wellington Street</li>
