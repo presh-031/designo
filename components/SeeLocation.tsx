@@ -17,9 +17,9 @@ const SeeLocation = ({
   const gradient = `linear-gradient(${gradientDirection}, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)`;
 
   return (
-    <div className="text-center font-normal ">
+    <div className="text-center font-normal  ">
       <div
-        className="mx-auto mb-[4.8rem] grid  h-[20.2rem] w-[20.2rem] rounded-full  "
+        className="mx-auto mb-[4.8rem] grid h-[20.2rem]  w-[20.2rem] rounded-full"
         style={{
           background: gradient,
         }}
