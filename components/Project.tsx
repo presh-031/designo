@@ -8,7 +8,7 @@ type ProjectProps = {
 };
 const Project = (props: ProjectProps) => {
   return (
-    <div className="mx-auto  sm:flex sm:justify-center">
+    <div className="mx-auto outline  sm:flex sm:justify-center">
       <Image
         src={props.src}
         alt={props.alt}

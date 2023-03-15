@@ -22,7 +22,7 @@ const ProjectType = ({ href, projectType, imageNumber }: ProjectTypeProps) => {
   return (
     <Link
       href={href}
-      className={`${bgClass} grid place-items-center rounded-2xl   py-[9.0rem] font-medium text-white sm:py-[5.3rem]`}
+      className={`${bgClass} grid place-items-center rounded-2xl bg-cover bg-no-repeat   py-[9.0rem] font-medium text-white sm:py-[5.3rem]`}
     >
       <p className="mb-[1.197rem] text-[2.8rem] leading-[3.6rem] tracking-[0.14rem] sm:mb-[2.4rem] sm:text-[4rem] sm:leading-[4.8rem] sm:tracking-[.2]">
         {projectType}

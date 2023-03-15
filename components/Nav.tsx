@@ -16,7 +16,7 @@ const Nav = ({ setIsOpen }: NavProps) => {
   return (
     <nav
       onClick={handleNavBgClick}
-      className="absolute top-[10.5rem] right-0 bottom-0 z-[10000] w-full bg-black bg-opacity-50 text-[2.4rem] font-normal leading-[2.5rem] tracking-[0.2rem] text-white "
+      className="absolute top-[9.7rem] right-0 bottom-0 z-[10000] w-full bg-black bg-opacity-50 text-[2.4rem] font-normal leading-[2.5rem] tracking-[0.2rem] text-white "
     >
       <ul
         onClick={(e) => e.stopPropagation()}
