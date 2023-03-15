@@ -45,6 +45,7 @@ const ContactForm = () => {
       setShowErrorMsg(false);
     }
   };
+
   return (
     <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem] text-white sm:mx-[4rem] sm:rounded-2xl  sm:px-[3.8rem] md:px-[5.8rem]">
       <div className="mb-[3.7rem] text-center sm:text-left">

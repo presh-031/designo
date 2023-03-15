@@ -1,9 +1,9 @@
-import Talk from "@/components/Cta";
 import OtherPagesHero from "@/components/OtherPagesHero";
+import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
-import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import ProjectsCard from "@/ui/ProjectsCard";
+import Talk from "@/components/Cta";
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
@@ -13,7 +13,7 @@ import transfer from "../assets/web-design/desktop/image-transfer.jpg";
 
 const webDesign = () => {
   return (
-    <div>
+    <>
       <OtherPagesHero
         title="Web Design"
         aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
@@ -71,7 +71,7 @@ const webDesign = () => {
       </OtherProjectTypesCard>
 
       <Talk />
-    </div>
+    </>
   );
 };
 
