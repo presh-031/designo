@@ -5,7 +5,7 @@ import illustrationResourceful from "../assets/home/desktop/illustration-resourc
 
 const AboutProjects = () => {
   return (
-    <div className="flex flex-col gap-[8rem] text-center   sm:gap-[3.2rem]">
+    <div className="flex flex-col gap-[8rem] text-center outline   sm:gap-[3.2rem]">
       <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem]">
         <div
           style={{
