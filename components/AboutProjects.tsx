@@ -5,24 +5,24 @@ import illustrationResourceful from "../assets/home/desktop/illustration-resourc
 
 const AboutProjects = () => {
   return (
-    <div className="flex flex-col gap-[8rem] text-center outline   sm:gap-[3.2rem]">
-      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem]">
+    <div className="flex flex-col gap-[8rem] text-center  sm:gap-[3.2rem]   xl:mx-[16.5rem] xl:flex-row xl:gap-[3rem]">
+      <div className="px-[2.4rem] text-dark-grey   sm:flex  sm:gap-[4.80rem] sm:px-[4rem] xl:flex-col xl:px-0">
         <div
           style={{
             background:
               "linear-gradient(180deg, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)",
           }}
-          className="mx-auto inline-block rounded-full   "
+          className="mx-auto inline-block rounded-full    "
         >
           <Image
             src={illustrationPassionate}
             alt="passionate"
             width={202}
             height={202}
-            className="w-[100%]  sm:h-full sm:w-auto"
+            className="w-[100%] sm:h-full sm:w-auto"
           />
         </div>
-        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left">
+        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
           <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
             PASSIONATE
           </p>
@@ -34,7 +34,7 @@ const AboutProjects = () => {
         </div>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem]">
+      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
         <div
           style={{
             background:
@@ -50,7 +50,7 @@ const AboutProjects = () => {
             className="w-[100%]  sm:h-full sm:w-auto"
           />
         </div>
-        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left">
+        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
           <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
             RESOURCEFUL
           </p>
@@ -62,7 +62,7 @@ const AboutProjects = () => {
         </div>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem]">
+      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
         <div
           style={{
             background:
@@ -78,7 +78,7 @@ const AboutProjects = () => {
             className="w-[100%]  sm:h-full sm:w-auto"
           />
         </div>
-        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left">
+        <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
           <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
             FRIENDLY
           </p>

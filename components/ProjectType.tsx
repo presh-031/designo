@@ -22,15 +22,17 @@ const ProjectType = ({ href, projectType, imageNumber }: ProjectTypeProps) => {
   return (
     <Link
       href={href}
-      className={`${bgClass} grid place-items-center rounded-2xl bg-cover bg-no-repeat   py-[9.0rem] font-medium text-white sm:py-[5.3rem]`}
+      className={`${bgClass} grid h-[25rem] place-items-center rounded-2xl bg-cover bg-no-repeat    font-medium text-white  sm:h-[20rem] xl:h-full`}
     >
-      <p className="mb-[1.197rem] text-[2.8rem] leading-[3.6rem] tracking-[0.14rem] sm:mb-[2.4rem] sm:text-[4rem] sm:leading-[4.8rem] sm:tracking-[.2]">
-        {projectType}
-      </p>
-      <p className="flex items-center gap-[1.6rem] text-[1.5rem] leading-[2.1rem] tracking-[0.5rem] sm:gap-[2.1rem] ">
-        VIEW PROJECTS
-        <Image src={rightArrow} alt="arrow-right" />
-      </p>
+      <div className="">
+        <p className="mb-[1.197rem] text-[2.8rem] leading-[3.6rem] tracking-[0.14rem]  sm:mb-[2.4rem] sm:text-[4rem] sm:leading-[4.8rem] sm:tracking-[.2]">
+          {projectType}
+        </p>
+        <p className="flex items-center justify-center gap-[1.6rem] text-[1.5rem] leading-[2.1rem] tracking-[0.5rem]  sm:gap-[2.1rem] ">
+          VIEW PROJECTS
+          <Image src={rightArrow} alt="arrow-right" />
+        </p>
+      </div>
     </Link>
   );
 };
