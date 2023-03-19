@@ -18,7 +18,7 @@ const Footer = () => {
         isContactPage
           ? "pt-[6.4rem] sm:pt-[8.0rem]"
           : "pt-[25.35rem] sm:pt-[16.6rem]"
-      } text-center font-normal text-white  sm:px-[3.9rem] `}
+      } text-center font-normal text-white  sm:px-[3.9rem] xl:px-[16.5rem]`}
     >
       <div className=" sm:flex sm:justify-between sm:border-b-[1px] sm:border-white sm:border-opacity-10 sm:pb-[4rem]">
         <Link
@@ -46,7 +46,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="mt-[4rem] flex flex-col gap-[4rem]   pb-[6.4rem] sm:justify-between min-[717px]:flex-row min-[717px]:text-left">
+      <div className="mt-[4rem] flex flex-col gap-[4rem]   pb-[6.4rem] sm:justify-between min-[717px]:flex-row min-[717px]:items-end min-[717px]:text-left">
         <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50">
           <li className="font-bold">Designo Central Office</li>
           <li>3886 Wellington Street</li>
