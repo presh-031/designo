@@ -1,9 +1,9 @@
+import Talk from "@/components/Cta";
 import OtherPagesHero from "@/components/OtherPagesHero";
-import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
+import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import ProjectsCard from "@/ui/ProjectsCard";
-import Talk from "@/components/Cta";
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
@@ -18,7 +18,9 @@ const webDesign = () => {
         title="Web Design"
         aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
       />
+
       <ProjectsCard>
+        {/* <div className="mb-[9.6rem] grid grid-cols-1 gap-[4rem] border-4 border-red-800 sm:mb-[12rem] sm:gap-[3.2rem] sm:px-[3.9rem] xl:mb-[16rem] xl:grid-cols-3  xl:gap-[3rem] xl:px-[16.5rem]"> */}
         <Project
           src={express}
           alt="express"
@@ -56,6 +58,7 @@ const webDesign = () => {
           info="A multi-carrier shipping website for ecommerce businesses"
         />
       </ProjectsCard>
+      {/* </div> */}
 
       <OtherProjectTypesCard>
         <ProjectType
