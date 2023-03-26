@@ -4,7 +4,7 @@ import Location from "@/components/Location";
 const locations = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-[4rem] sm:gap-[8rem] md:gap-[12rem]">
+      <div className="grid grid-cols-1 gap-[4rem] sm:gap-[8rem]  md:gap-[12rem] xl:gap-[3.2rem]">
         <Location
           location="Canada"
           office="Designo Central Office"

@@ -35,8 +35,11 @@ const Location = (props: LocationProps) => {
   );
 
   return (
-    <div id={props.id} className="sm:px-[4rem]">
-      <div className="h-[32rem] sm:mb-[2rem] sm:overflow-hidden sm:rounded-2xl md:mb-[3.1rem]">
+    <div
+      id={props.id}
+      className="outline sm:px-[4rem] xl:flex  xl:px-[16.5rem]"
+    >
+      <div className="h-[32rem] outline sm:mb-[2rem] sm:overflow-hidden sm:rounded-2xl md:mb-[3.1rem] xl:m-0">
         <Map coordinates={props.addressCoords} />
       </div>
       <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8.0rem] text-center sm:overflow-hidden sm:rounded-2xl sm:px-[7.4rem] sm:py-[8.8rem] sm:text-left">

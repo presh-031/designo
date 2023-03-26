@@ -1,9 +1,8 @@
-import Header from "./Header";
-
 import Footer from "./Footer";
-
+import Header from "./Header";
 // Universal app font setup
 import { Jost } from "@next/font/google";
+
 const jost = Jost({ subsets: ["latin"] });
 
 type LayoutProps = {
