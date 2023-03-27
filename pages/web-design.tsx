@@ -20,7 +20,6 @@ const webDesign = () => {
       />
 
       <ProjectsCard>
-        {/* <div className="mb-[9.6rem] grid grid-cols-1 gap-[4rem] border-4 border-red-800 sm:mb-[12rem] sm:gap-[3.2rem] sm:px-[3.9rem] xl:mb-[16rem] xl:grid-cols-3  xl:gap-[3rem] xl:px-[16.5rem]"> */}
         <Project
           src={express}
           alt="express"
