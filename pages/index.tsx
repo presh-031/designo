@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem] outline sm:px-[4rem] xl:my-[16rem] xl:flex-row xl:px-[16.5rem]">
+        <div className="my-[12rem] flex flex-col gap-[2.4rem] px-[2.4rem]  sm:px-[4rem] xl:my-[16rem] xl:flex-row xl:px-[16.5rem]">
           <div className=" xl:h-[64rem] xl:flex-1">
             <ProjectType
               href="/web-design"
