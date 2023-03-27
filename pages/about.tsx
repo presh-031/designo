@@ -4,13 +4,13 @@ import Talk from "@/components/Cta";
 const about = () => {
   return (
     <div className="">
-      <div className=" outline sm:mx-[4rem] sm:mb-[12rem] xl:mx-[16.5rem] xl:mb-[16rem] xl:flex xl:h-[48rem] xl:flex-row-reverse">
+      <div className="  sm:mx-[4rem] sm:mb-[12rem] xl:mx-[16.5rem] xl:mb-[16rem] xl:flex xl:h-[48rem] xl:flex-row-reverse">
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-about-hero.jpg')] bg-cover bg-center min-[450px]:bg-[url('../assets/about/tablet/image-about-hero.jpg')] sm:rounded-t-2xl xl:h-full  xl:w-[42.8%] xl:rounded-none xl:rounded-r-2xl xl:bg-[url('../assets/about/desktop/image-about-hero.jpg')]"></div>
         <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-small-circle.svg')] bg-no-repeat py-[8rem] px-[2.4rem] text-center text-white sm:rounded-b-2xl sm:px-[5.8rem] sm:py-[6.4rem]  xl:flex xl:w-[57.2%] xl:flex-col xl:justify-center xl:rounded-none xl:rounded-l-2xl xl:py-[0] xl:pr-[8.2rem] xl:pl-[9.5rem] xl:text-left">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] sm:mb-[3.2rem] sm:text-[4.8rem] sm:leading-[4.8rem] ">
             About Us
           </p>
-          <p className="text-[1.5rem] font-normal leading-[2.5rem] outline sm:text-[1.6rem] sm:leading-[2.6rem]">
+          <p className="text-[1.5rem] font-normal leading-[2.5rem]  sm:text-[1.6rem] sm:leading-[2.6rem]">
             Founded in 2010, we are a creative agency that produces lasting
             results for our clients. We’ve partnered with many startups,
             corporations, and nonprofits alike to craft designs that make real
@@ -20,7 +20,7 @@ const about = () => {
         </div>
       </div>
       <div className=" sm:mx-[4rem] sm:overflow-hidden sm:rounded-2xl xl:mx-[16.5rem] xl:flex xl:h-[64rem]">
-        <div className="h-[32rem] bg-[url('../assets/about/mobile/image-world-class-talent.jpg')]  bg-cover bg-center outline min-[450px]:bg-[url('../assets/about/tablet/image-world-class-talent.jpg')] xl:h-full xl:w-[42.8%] xl:bg-[url('../assets/about/desktop/image-world-class-talent.jpg')]"></div>
+        <div className="h-[32rem] bg-[url('../assets/about/mobile/image-world-class-talent.jpg')]  bg-cover bg-center  min-[450px]:bg-[url('../assets/about/tablet/image-world-class-talent.jpg')] xl:h-full xl:w-[42.8%] xl:bg-[url('../assets/about/desktop/image-world-class-talent.jpg')]"></div>
         <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8rem] px-[2.4rem] text-center sm:px-[5.8rem] sm:py-[6.8rem] xl:flex xl:w-[57.2%] xl:flex-col xl:justify-center xl:py-[0] xl:px-[9.4rem] xl:text-left ">
           <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach sm:text-[4rem] sm:leading-[4.8rem]">
             World-class talent

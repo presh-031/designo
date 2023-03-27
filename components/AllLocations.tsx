@@ -5,7 +5,7 @@ import SeeLocation from "./SeeLocation";
 
 const AllLocations = () => {
   return (
-    <div className="flex flex-col items-center gap-[4.8rem] py-[12rem] outline sm:gap-[5.8rem] xl:flex-row xl:justify-center xl:gap-[3rem] xl:py-[16rem]  xl:px-[16.5rem] ">
+    <div className="flex flex-col items-center gap-[4.8rem] py-[12rem]  sm:gap-[5.8rem] xl:flex-row xl:justify-center xl:gap-[3rem] xl:py-[16rem]  xl:px-[16.5rem] ">
       <SeeLocation
         src={canada}
         location="canada"

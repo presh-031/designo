@@ -17,7 +17,7 @@ const SeeLocation = ({
   const gradient = `linear-gradient(${gradientDirection}, rgba(93, 2, 2, 0) 0%, rgba(93, 2, 2, 0.1) 100%)`;
 
   return (
-    <div className="w-[35rem] text-center font-normal outline  ">
+    <div className="w-[35rem] text-center font-normal   ">
       <div
         className="mx-auto mb-[4.8rem] grid h-[20.2rem]  w-[20.2rem] rounded-full"
         style={{

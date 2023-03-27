@@ -14,6 +14,7 @@ const locations = () => {
           phone="+1 253-863-8967"
           mail="contact@designo.co"
           id="canada"
+          render="1"
         />
         <Location
           location="Australia"
@@ -24,6 +25,7 @@ const locations = () => {
           phone="(02) 6720 9092"
           mail="contact@designo.au"
           id="australia"
+          render="2"
         />
         <Location
           location="United Kingdom"
@@ -34,6 +36,7 @@ const locations = () => {
           phone="078 3115 1400"
           mail="contact@designo.uk"
           id="united-kingdom"
+          render="3"
         />
       </div>
       <Talk />

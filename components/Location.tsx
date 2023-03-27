@@ -11,6 +11,7 @@ type LocationProps = {
   phone: string;
   mail: string;
   id: string;
+  render: string;
 };
 
 const Location = (props: LocationProps) => {
@@ -37,12 +38,14 @@ const Location = (props: LocationProps) => {
   return (
     <div
       id={props.id}
-      className="outline sm:px-[4rem] xl:flex  xl:px-[16.5rem]"
+      className={` sm:px-[4rem] xl:flex xl:h-[32.6rem] ${
+        props.render === "2" ? "" : "xl:flex-row-reverse"
+      } xl:gap-[2.7%] xl:px-[16.5rem]`}
     >
-      <div className="h-[32rem] outline sm:mb-[2rem] sm:overflow-hidden sm:rounded-2xl md:mb-[3.1rem] xl:m-0">
+      <div className="h-[32rem]  sm:mb-[2rem] sm:overflow-hidden sm:rounded-2xl md:mb-[3.1rem] xl:m-0 xl:h-full xl:w-[31.5%]">
         <Map coordinates={props.addressCoords} />
       </div>
-      <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8.0rem] text-center sm:overflow-hidden sm:rounded-2xl sm:px-[7.4rem] sm:py-[8.8rem] sm:text-left">
+      <div className="bg-[#fdf3f0] bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] py-[8.0rem] text-center  sm:overflow-hidden sm:rounded-2xl sm:px-[7.4rem] sm:py-[8.8rem] sm:text-left xl:w-[65.8%]">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] text-peach  sm:text-[4rem] sm:leading-[4.8rem]">
           {props.location}
         </p>
