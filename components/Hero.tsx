@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       {/* h-37.1rem? */}
-      <div className="h-[47.1rem] bg-[url('../assets/home/desktop/image-hero-phone.png')] bg-[center_top_-6.55rem] bg-no-repeat px-[2.1rem] outline  xl:h-[49.5rem] xl:w-[40%] xl:bg-[left_-5rem_top_-16.55rem]"></div>
+      <div className="h-[47.1rem] bg-[url('../assets/home/desktop/image-hero-phone.png')] bg-[center_top_-6.55rem] bg-no-repeat px-[2.1rem]   xl:h-[49.5rem] xl:w-[40%] xl:bg-[left_-12rem_top_-16.55rem] min-[1300px]:bg-[left_-11rem_top_-16.55rem] min-[1300px]:bg-[left_-12rem_top_-16.55rem] min-[1340px]:bg-[left_-9.5rem_top_-16.55rem] min-[1380px]:bg-[left_-8rem_top_-16.55rem] min-[1410px]:bg-[left_-7rem_top_-16.55rem] min-[1430px]:bg-[left_-6rem_top_-16.55rem] min-[1440px]:bg-[left_-5rem_top_-16.55rem]"></div>
     </div>
   );
 };
