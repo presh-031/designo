@@ -75,11 +75,11 @@ const Footer = () => {
         </ul>
 
         <div className="flex  items-center justify-center gap-[1.6rem]">
-          <Image src={facebook} alt="facebook" />
-          <Image src={youtube} alt="youtube" />
-          <Image src={twitter} alt="twitter" />
-          <Image src={pinterest} alt="pinterest" />
-          <Image src={instagram} alt="instagram" />
+          <Image src={facebook} alt="facebook" className="cursor-pointer " />
+          <Image src={youtube} alt="youtube" className="cursor-pointer " />
+          <Image src={twitter} alt="twitter" className="cursor-pointer " />
+          <Image src={pinterest} alt="pinterest" className="cursor-pointer " />
+          <Image src={instagram} alt="instagram" className="cursor-pointer " />
         </div>
       </div>
     </footer>
