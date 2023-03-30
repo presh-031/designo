@@ -26,13 +26,25 @@ const Header = () => {
 
       <ul className="hidden text-[1.4rem]  sm:flex sm:items-center  sm:gap-[2rem] sm:font-normal  sm:leading-[1.4rem] sm:tracking-[2px] sm:text-dark-grey min-[680px]:gap-[4.2rem] ">
         <li>
-          <Link href="/about">OUR COMPANY</Link>
+          <Link href="/about" className="hover:underline ">
+            OUR COMPANY
+          </Link>
         </li>
         <li>
-          <Link href="/locations">LOCATIONS</Link>
+          <Link
+            href="/locations"
+            className="hover:underline hover:decoration-dark-grey hover:decoration-[1px] "
+          >
+            LOCATIONS
+          </Link>
         </li>
         <li>
-          <Link href="/contact">CONTACT</Link>
+          <Link
+            href="/contact"
+            className="hover:underline hover:decoration-dark-grey hover:decoration-[1px]"
+          >
+            CONTACT
+          </Link>
         </li>
       </ul>
 

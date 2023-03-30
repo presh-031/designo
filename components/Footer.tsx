@@ -35,13 +35,28 @@ const Footer = () => {
         </Link>
         <ul className=" flex flex-col gap-[2.2rem] text-[1.4rem] font-normal leading-[1.4rem] tracking-[0.2rem] max-[639px]:gap-[3.2rem]  sm:flex-row sm:items-center min-[700px]:gap-[4.2rem]">
           <li>
-            <Link href="/about">OUR COMPANY</Link>
+            <Link
+              href="/about"
+              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+            >
+              OUR COMPANY
+            </Link>
           </li>
           <li>
-            <Link href="/locations">LOCATIONS</Link>
+            <Link
+              href="/locations"
+              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+            >
+              LOCATIONS
+            </Link>
           </li>
           <li>
-            <Link href="/contact">CONTACT</Link>
+            <Link
+              href="/contact"
+              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+            >
+              CONTACT
+            </Link>
           </li>
         </ul>
       </div>
