@@ -47,12 +47,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem] text-white sm:mx-[4rem] sm:rounded-2xl  sm:px-[3.8rem] md:px-[5.8rem]">
-      <div className="mb-[3.7rem] text-center sm:text-left">
+    <div className=" bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem] text-white outline sm:mx-[4rem] sm:rounded-2xl sm:px-[3.8rem] md:px-[5.8rem] xl:mx-[16.5rem] xl:flex xl:justify-between  xl:py-[5.4rem] xl:px-[9.5rem]">
+      <div className="mb-[3.7rem] text-center  sm:text-left xl:m-0 xl:w-[445px] xl:pt-[8.0rem]">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] sm:mb-[3.2rem] sm:text-[4.8rem] sm:leading-[4.8rem]">
           Contact Us
         </p>
-        <p className="text-[1.5rem] font-normal leading-[2.5rem] sm:text-[1.6rem] sm:leading-[2.6rem]">
+        <p className="text-[1.5rem]  font-normal leading-[2.5rem] sm:text-[1.6rem] sm:leading-[2.6rem]">
           Ready to take it to the next level? Let&apos;s talk about your project
           or idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that&apos;s relatable to your
@@ -63,7 +63,7 @@ const ContactForm = () => {
       {/* Check form specifics for match with design */}
       <form
         onSubmit={handleSubmit}
-        className="text-[1.5rem] font-normal leading-[2.6rem]"
+        className="flex flex-col text-[1.5rem] font-normal leading-[2.6rem]  xl:w-[380px]   "
       >
         <div
           className="flex  border-b-[1px] border-white
@@ -185,7 +185,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <button className="mx-auto block rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey hover:bg-light-peach hover:text-white">
+        <button className="w-fit self-center rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey  hover:bg-light-peach hover:text-white md:self-end">
           submit
         </button>
       </form>
