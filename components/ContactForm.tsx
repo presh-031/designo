@@ -36,8 +36,6 @@ const ContactForm = () => {
     if (!name || !email || !phone || !message) {
       setShowErrorMsg(true);
     } else {
-      // at this point a post req should go to a server.
-
       setName("");
       setEmail("");
       setPhone("");
