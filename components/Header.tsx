@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "./Nav";
+import { useState } from "react";
+import logo from "../assets/shared/desktop/logo-dark.png";
 import closeMenu from "../assets/shared/mobile/icon-close.svg";
 import hamburgerMenu from "../assets/shared/mobile/icon-hamburger.svg";
-import logo from "../assets/shared/desktop/logo-dark.png";
-import { useState } from "react";
+import Nav from "./Nav";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +26,17 @@ const Header = () => {
 
       <ul className="hidden text-[1.4rem]  sm:flex sm:items-center  sm:gap-[2rem] sm:font-normal  sm:leading-[1.4rem] sm:tracking-[2px] sm:text-dark-grey min-[680px]:gap-[4.2rem] ">
         <li>
-          <Link href="/about" className="hover:underline ">
+          <Link
+            href="/about"
+            className="transition duration-300 hover:text-peach"
+          >
             OUR COMPANY
           </Link>
         </li>
         <li>
           <Link
             href="/locations"
-            className="hover:underline hover:decoration-dark-grey hover:decoration-[1px] "
+            className="transition duration-300 hover:text-peach"
           >
             LOCATIONS
           </Link>
@@ -41,7 +44,7 @@ const Header = () => {
         <li>
           <Link
             href="/contact"
-            className="hover:underline hover:decoration-dark-grey hover:decoration-[1px]"
+            className="transition duration-300 hover:text-peach"
           >
             CONTACT
           </Link>

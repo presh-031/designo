@@ -37,7 +37,7 @@ const Footer = () => {
           <li>
             <Link
               href="/about"
-              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+              className="transition duration-300 hover:text-peach  hover:decoration-dark-grey hover:decoration-[1px]"
             >
               OUR COMPANY
             </Link>
@@ -45,7 +45,7 @@ const Footer = () => {
           <li>
             <Link
               href="/locations"
-              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+              className="transition duration-300 hover:text-peach  hover:decoration-dark-grey hover:decoration-[1px]"
             >
               LOCATIONS
             </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
           <li>
             <Link
               href="/contact"
-              className="hover:underline  hover:decoration-dark-grey hover:decoration-[1px]"
+              className="transition duration-300 hover:text-peach  hover:decoration-dark-grey hover:decoration-[1px]"
             >
               CONTACT
             </Link>
@@ -62,24 +62,45 @@ const Footer = () => {
       </div>
 
       <div className="mt-[4rem] flex flex-col gap-[4rem]   pb-[6.4rem] sm:justify-between min-[717px]:flex-row min-[717px]:items-end min-[717px]:text-left">
-        <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50">
+        <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50 transition duration-300 hover:opacity-100">
           <li className="font-bold">Designo Central Office</li>
           <li>3886 Wellington Street</li>
           <li>Toronto, Ontario M9C 3J5</li>
         </ul>
 
-        <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50">
+        <ul className=" text-[1.6rem] leading-[2.6rem] opacity-50 transition duration-300 hover:opacity-100">
           <li className="font-bold">Contact Us (Central Office)</li>
           <li>P : +1 253-863-8967</li>
           <li>M : contact@designo.co</li>
         </ul>
 
         <div className="flex  items-center justify-center gap-[1.6rem]">
-          <Image src={facebook} alt="facebook" className="cursor-pointer " />
-          <Image src={youtube} alt="youtube" className="cursor-pointer " />
-          <Image src={twitter} alt="twitter" className="cursor-pointer " />
-          <Image src={pinterest} alt="pinterest" className="cursor-pointer " />
-          <Image src={instagram} alt="instagram" className="cursor-pointer " />
+          <Image
+            src={facebook}
+            alt="facebook"
+            className="cursor-pointer transition duration-300 hover:opacity-80"
+          />
+
+          <Image
+            src={youtube}
+            alt="youtube"
+            className="cursor-pointer transition duration-300 hover:opacity-80"
+          />
+          <Image
+            src={twitter}
+            alt="twitter"
+            className="cursor-pointer transition duration-300 hover:opacity-80"
+          />
+          <Image
+            src={pinterest}
+            alt="pinterest"
+            className="cursor-pointer transition duration-300 hover:opacity-80"
+          />
+          <Image
+            src={instagram}
+            alt="instagram"
+            className="cursor-pointer transition duration-300 hover:opacity-80"
+          />
         </div>
       </div>
     </footer>

@@ -185,7 +185,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <button className="w-fit self-center rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey  hover:bg-light-peach hover:text-white md:self-end">
+        <button className="w-fit self-center rounded-2xl bg-white px-[4.8rem] py-[1.8rem] text-[1.5rem] font-medium uppercase leading-[2.198rem] tracking-[0.1rem] text-dark-grey transition duration-300  hover:bg-light-peach hover:text-white md:self-end">
           submit
         </button>
       </form>

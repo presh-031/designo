@@ -32,7 +32,7 @@ const SeeLocation = ({
       <Link
         href={`/locations/#${href}`}
         scroll={false}
-        className="inline-block rounded-2xl bg-peach p-[1.8rem] text-[1.5rem] uppercase leading-[2.1rem] tracking-[0.1rem]  text-white hover:bg-light-peach"
+        className="inline-block rounded-2xl bg-peach p-[1.8rem] text-[1.5rem] uppercase leading-[2.1rem] tracking-[0.1rem]  text-white transition duration-300 hover:bg-light-peach"
       >
         see location
       </Link>
