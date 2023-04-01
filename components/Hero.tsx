@@ -2,7 +2,7 @@ import WhiteButton from "./WhiteButton";
 
 const Hero = () => {
   return (
-    <div className=" bg-peach bg-[url('../assets/home/desktop/bg-pattern-hero-home.svg')] bg-left bg-no-repeat pt-[8.0rem] text-center text-white sm:mx-[4rem] sm:rounded-2xl sm:pt-[6rem] xl:mx-[16.5rem] xl:flex xl:pl-[9.5rem] xl:pt-[14.5rem]">
+    <div className="bg-peach bg-[url('../assets/home/desktop/bg-pattern-hero-home.svg')] bg-left bg-no-repeat pt-[8.0rem] text-center text-white  sm:mx-[4rem] sm:rounded-2xl sm:pt-[6rem] xl:mx-[16.5rem] xl:flex xl:pl-[9.5rem] xl:pt-[14.5rem]">
       <div className="mx-[2.4rem]   sm:mx-auto sm:max-w-[58rem] xl:mx-0 xl:w-[50%] xl:max-w-none xl:text-left">
         <p className="mb-[1.4rem] text-[3.2rem] font-medium leading-[3.6rem]  sm:mb-[0.80rem]  sm:text-[4.8rem] sm:leading-[4.8rem] xl:mb-[1.1rem]">
           Award-winning custom designs and digital branding solutions

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import logo from "../assets/shared/desktop/logo-dark.png";
+import Nav from "./Nav";
 import closeMenu from "../assets/shared/mobile/icon-close.svg";
 import hamburgerMenu from "../assets/shared/mobile/icon-hamburger.svg";
-import Nav from "./Nav";
+import logo from "../assets/shared/desktop/logo-dark.png";
+import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-[2.4rem] py-[3.5rem]   sm:py-[6.4rem] sm:px-[3.9rem] xl:px-[16.5rem] xl:py-[7rem] ">
+    <header className="flex items-center justify-between px-[2.4rem] py-[3.5rem]  max-[300px]:px-[1.8rem]  sm:py-[6.4rem] sm:px-[3.9rem] xl:px-[16.5rem] xl:py-[7rem] ">
       <Link
         onClick={() => {
           setIsOpen(false);

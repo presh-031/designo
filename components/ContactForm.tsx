@@ -47,7 +47,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem] text-white outline sm:mx-[4rem] sm:rounded-2xl sm:px-[3.8rem] md:px-[5.8rem] xl:mx-[16.5rem] xl:flex xl:justify-between  xl:py-[5.4rem] xl:px-[9.5rem]">
+    <div className=" bg-peach bg-[url('../assets/shared/desktop/bg-pattern-two-circles.svg')] bg-no-repeat px-[2.4rem] py-[7.2rem]  text-white outline max-[300px]:px-[1.80rem] sm:mx-[4rem] sm:rounded-2xl sm:px-[3.8rem] md:px-[5.8rem] xl:mx-[16.5rem] xl:flex xl:justify-between  xl:py-[5.4rem] xl:px-[9.5rem]">
       <div className="mb-[3.7rem] text-center  sm:text-left xl:m-0 xl:w-[445px] xl:pt-[8.0rem]">
         <p className="mb-[2.4rem] text-[3.2rem] font-medium leading-[3.6rem] sm:mb-[3.2rem] sm:text-[4.8rem] sm:leading-[4.8rem]">
           Contact Us
