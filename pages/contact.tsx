@@ -1,10 +1,12 @@
 import AllLocations from "@/components/AllLocations";
 import ContactForm from "@/components/ContactForm";
+import Meta from "@/components/Head";
 
 const contact = () => {
   return (
     <>
-      {/* Check contact form's tablet responsiveness. */}
+      <Meta page="Contact Us" />
+
       <ContactForm />
       <AllLocations />
     </>

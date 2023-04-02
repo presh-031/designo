@@ -1,9 +1,12 @@
 import Talk from "@/components/Cta";
+import Meta from "@/components/Head";
 import Location from "@/components/Location";
 
 const locations = () => {
   return (
     <>
+      <Meta page="Our Locations" />
+
       <div className="grid grid-cols-1 gap-[4rem] sm:gap-[8rem]  md:gap-[12rem] xl:gap-[3.2rem]">
         <Location
           location="Canada"

@@ -1,9 +1,12 @@
 import AllLocations from "@/components/AllLocations";
 import Talk from "@/components/Cta";
+import Meta from "@/components/Head";
 
 const about = () => {
   return (
-    <div className="">
+    <>
+      <Meta page="About Us" />
+
       <div className="  sm:mx-[4rem] sm:mb-[12rem] xl:mx-[16.5rem] xl:mb-[16rem] xl:flex xl:h-[48rem] xl:flex-row-reverse">
         <div className="h-[32rem] bg-[url('../assets/about/mobile/image-about-hero.jpg')] bg-cover bg-center min-[450px]:bg-[url('../assets/about/tablet/image-about-hero.jpg')] sm:rounded-t-2xl xl:h-full  xl:w-[42.8%] xl:rounded-none xl:rounded-r-2xl xl:bg-[url('../assets/about/desktop/image-about-hero.jpg')]"></div>
         <div className="bg-peach bg-[url('../assets/shared/desktop/bg-pattern-small-circle.svg')] bg-no-repeat py-[8rem] px-[2.4rem] text-center text-white sm:rounded-b-2xl sm:px-[5.8rem] sm:py-[6.4rem]  xl:flex xl:w-[57.2%] xl:flex-col xl:justify-center xl:rounded-none xl:rounded-l-2xl xl:py-[0] xl:pr-[8.2rem] xl:pl-[9.5rem] xl:text-left">
@@ -67,7 +70,7 @@ const about = () => {
       </div>
 
       <Talk />
-    </div>
+    </>
   );
 };
 

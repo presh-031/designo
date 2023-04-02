@@ -1,4 +1,5 @@
 import Talk from "@/components/Cta";
+import Meta from "@/components/Head";
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
@@ -10,7 +11,9 @@ import science from "../assets/graphic-design/desktop/image-science.jpg";
 
 const graphicDesign = () => {
   return (
-    <div>
+    <>
+      <Meta page="Graphic Design" />
+
       <OtherPagesHero
         title="Graphic Design"
         aboutTitle="We deliver eye-catching branding materials that are tailored to meet your business objectives."
@@ -51,7 +54,7 @@ const graphicDesign = () => {
       </OtherProjectTypesCard>
 
       <Talk />
-    </div>
+    </>
   );
 };
 

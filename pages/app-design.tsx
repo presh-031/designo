@@ -1,4 +1,5 @@
 import Talk from "@/components/Cta";
+import Meta from "@/components/Head";
 import OtherPagesHero from "@/components/OtherPagesHero";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
@@ -12,7 +13,9 @@ import todo from "../assets/app-design/desktop/image-todo.jpg";
 
 const appDesign = () => {
   return (
-    <div>
+    <>
+      <Meta page="App Design" />
+
       <OtherPagesHero
         title="App Design"
         aboutTitle="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
@@ -64,7 +67,7 @@ const appDesign = () => {
       </OtherProjectTypesCard>
 
       <Talk />
-    </div>
+    </>
   );
 };
 

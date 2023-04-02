@@ -6,7 +6,7 @@ import illustrationResourceful from "../assets/home/desktop/illustration-resourc
 const AboutProjects = () => {
   return (
     <div className="flex flex-col gap-[8rem] text-center  sm:gap-[3.2rem]   xl:mx-[16.5rem] xl:flex-row xl:gap-[3rem]">
-      <div className="px-[2.4rem] text-dark-grey   sm:flex  sm:gap-[4.80rem] sm:px-[4rem] xl:flex-col xl:px-0">
+      <div className="group px-[2.4rem] text-dark-grey   sm:flex  sm:gap-[4.80rem] sm:px-[4rem] xl:flex-col xl:px-0">
         <div
           style={{
             background:
@@ -23,7 +23,7 @@ const AboutProjects = () => {
           />
         </div>
         <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
-          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
+          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] transition duration-300 group-hover:text-peach sm:mt-0 sm:mb-[1.6rem] ">
             PASSIONATE
           </p>
           <p className="text-[1.6rem] font-normal leading-[2.6rem] ">
@@ -34,7 +34,7 @@ const AboutProjects = () => {
         </div>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
+      <div className="group px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
         <div
           style={{
             background:
@@ -51,7 +51,7 @@ const AboutProjects = () => {
           />
         </div>
         <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
-          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
+          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] transition duration-200 group-hover:text-peach sm:mt-0 sm:mb-[1.6rem] ">
             RESOURCEFUL
           </p>
           <p className="text-[1.6rem] font-normal leading-[2.6rem] ">
@@ -62,7 +62,7 @@ const AboutProjects = () => {
         </div>
       </div>
 
-      <div className="px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
+      <div className="group px-[2.4rem] text-dark-grey  sm:flex sm:gap-[4.80rem]  sm:px-[4rem] xl:flex-col  xl:px-0">
         <div
           style={{
             background:
@@ -79,7 +79,7 @@ const AboutProjects = () => {
           />
         </div>
         <div className=" sm:flex sm:flex-1 sm:flex-col sm:justify-center sm:text-left xl:text-center">
-          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] sm:mt-0 sm:mb-[1.6rem] ">
+          <p className="mt-[4.8rem] mb-[3.2rem] text-[2rem] font-medium leading-[2.6rem] tracking-[0.5rem] transition duration-300 group-hover:text-peach sm:mt-0 sm:mb-[1.6rem] ">
             FRIENDLY
           </p>
           <p className="text-[1.6rem] font-normal leading-[2.6rem] ">

@@ -1,8 +1,9 @@
+import Talk from "@/components/Cta";
+import Meta from "@/components/Head";
 import OtherPagesHero from "@/components/OtherPagesHero";
-import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import Project from "@/components/Project";
 import ProjectType from "@/components/ProjectType";
-import Talk from "@/components/Cta";
+import OtherProjectTypesCard from "@/ui/OtherProjectTypesCard";
 import blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import builder from "../assets/web-design/desktop/image-builder.jpg";
 import camp from "../assets/web-design/desktop/image-camp.jpg";
@@ -13,6 +14,8 @@ import transfer from "../assets/web-design/desktop/image-transfer.jpg";
 const webDesign = () => {
   return (
     <>
+      <Meta page="Web Design" />
+
       <OtherPagesHero
         title="Web Design"
         aboutTitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
